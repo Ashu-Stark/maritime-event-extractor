@@ -1,0 +1,14 @@
+[Unit]
+Description=Maritime Event Extractor
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=C:\Users\ashut\Downloads\maritho-main\maritho-main
+ExecStart=C:\Users\ashut\Downloads\maritho-main\maritho-main/venv/bin/gunicorn -c gunicorn_config.py app:app
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

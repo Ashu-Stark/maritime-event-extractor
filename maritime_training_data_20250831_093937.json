@@ -1,0 +1,2731 @@
+[
+  {
+    "text": "WHEAT IN BULK\nVESSEL ARRIVED: 9/Dec/23 05:30 HRS VESSEL BERTHED: 9/Dec/23 09:35\nDISCH  COMMD: 9/Dec/23 13:00 HRS DISCH   COMPLETED: 11/Dec/23 14:13\nNOR TENDERED: 9/Dec/23 05:30 HRS NOR ACCEPTED:",
+    "entities": [
+      {
+        "start": 39,
+        "end": 44,
+        "label": "TIME",
+        "text": "05:30"
+      },
+      {
+        "start": 74,
+        "end": 79,
+        "label": "TIME",
+        "text": "09:35"
+      },
+      {
+        "start": 103,
+        "end": 108,
+        "label": "TIME",
+        "text": "13:00"
+      },
+      {
+        "start": 142,
+        "end": 147,
+        "label": "TIME",
+        "text": "14:13"
+      },
+      {
+        "start": 171,
+        "end": 176,
+        "label": "TIME",
+        "text": "05:30"
+      },
+      {
+        "start": 6,
+        "end": 28,
+        "label": "LOCATION",
+        "text": "IN BULK\nVESSEL ARRIVED"
+      },
+      {
+        "start": 9,
+        "end": 28,
+        "label": "LOCATION",
+        "text": "BULK\nVESSEL ARRIVED"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "vessel arrived",
+    "source_file": "(10) SURABAYA LAYTIME Lila Seoul.pdf"
+  },
+  {
+    "text": "WHEAT IN BULK\nVESSEL ARRIVED: 9/Dec/23 05:30 HRS VESSEL BERTHED: 9/Dec/23 09:35\nDISCH  COMMD: 9/Dec/23 13:00 HRS DISCH   COMPLETED: 11/Dec/23 14:13\nNOR TENDERED: 9/Dec/23 05:30 HRS NOR ACCEPTED:",
+    "entities": [
+      {
+        "start": 39,
+        "end": 44,
+        "label": "TIME",
+        "text": "05:30"
+      },
+      {
+        "start": 74,
+        "end": 79,
+        "label": "TIME",
+        "text": "09:35"
+      },
+      {
+        "start": 103,
+        "end": 108,
+        "label": "TIME",
+        "text": "13:00"
+      },
+      {
+        "start": 142,
+        "end": 147,
+        "label": "TIME",
+        "text": "14:13"
+      },
+      {
+        "start": 171,
+        "end": 176,
+        "label": "TIME",
+        "text": "05:30"
+      },
+      {
+        "start": 6,
+        "end": 28,
+        "label": "LOCATION",
+        "text": "IN BULK\nVESSEL ARRIVED"
+      },
+      {
+        "start": 9,
+        "end": 28,
+        "label": "LOCATION",
+        "text": "BULK\nVESSEL ARRIVED"
+      }
+    ],
+    "event_type": "berthing",
+    "pattern": "vessel berthed",
+    "source_file": "(10) SURABAYA LAYTIME Lila Seoul.pdf"
+  },
+  {
+    "text": "HOURS  DATE  DAY \nVESSEL ARRIVED",
+    "entities": [],
+    "event_type": "arrival",
+    "pattern": "vessel arrived",
+    "source_file": "(11) MV. AYE EVOLUTION SOF.pdf"
+  },
+  {
+    "text": "AT VISAKHAPATNAM  PORT \nLIMITS  : 1635 HRS 18.02.2024  SUNDAY  \nFREE PRATIQUE GRANTED  : 1635 HRS 18.02.2024  SUNDAY  \nVESSEL ANCHORED  : 1806 HRS 18.02.2 024 SUNDAY  \nNOTICE OF READINESS TENDERED BY MASTER  : 1806 HRS 18.02.2024  SUNDAY  \nNOTICE OF READINESS TENDERED TO RECEIVERS  : 1806 HRS 18.02.2024  SUNDAY  \nNOTICE OF READINESS ACCEPTED BY RECEIVERS  : AS PER C/P AND SALE CONTRACT  \nANCHOR HEAVED UP : 1430",
+    "entities": [
+      {
+        "start": 43,
+        "end": 53,
+        "label": "TIME",
+        "text": "18.02.2024"
+      },
+      {
+        "start": 98,
+        "end": 108,
+        "label": "TIME",
+        "text": "18.02.2024"
+      },
+      {
+        "start": 219,
+        "end": 229,
+        "label": "TIME",
+        "text": "18.02.2024"
+      },
+      {
+        "start": 294,
+        "end": 304,
+        "label": "TIME",
+        "text": "18.02.2024"
+      },
+      {
+        "start": 3,
+        "end": 30,
+        "label": "LOCATION",
+        "text": "VISAKHAPATNAM  PORT \nLIMITS"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "anchored",
+    "source_file": "(11) MV. AYE EVOLUTION SOF.pdf"
+  },
+  {
+    "text": "HRS 22.02.2024 THURSD AY \nPILOT BOARDED THE VESSEL FOR BERTHING  :",
+    "entities": [
+      {
+        "start": 4,
+        "end": 14,
+        "label": "TIME",
+        "text": "22.02.2024"
+      }
+    ],
+    "event_type": "pilot",
+    "pattern": "pilot boarded",
+    "source_file": "(11) MV. AYE EVOLUTION SOF.pdf"
+  },
+  {
+    "text": "HRS 24.02.2024  SATURDAY  \nPILOT DISEMBARKED  :",
+    "entities": [
+      {
+        "start": 4,
+        "end": 14,
+        "label": "TIME",
+        "text": "24.02.2024"
+      }
+    ],
+    "event_type": "pilot",
+    "pattern": "pilot disembarked",
+    "source_file": "(11) MV. AYE EVOLUTION SOF.pdf"
+  },
+  {
+    "text": "HRS 24.02.2024  SATURDAY  \nVESS EL SAILED  :",
+    "entities": [
+      {
+        "start": 4,
+        "end": 14,
+        "label": "TIME",
+        "text": "24.02.2024"
+      }
+    ],
+    "event_type": "departure",
+    "pattern": "sailed",
+    "source_file": "(11) MV. AYE EVOLUTION SOF.pdf"
+  },
+  {
+    "text": "AT ANCHORAGE  18.02.2024  – SUNDAY  \nVESSEL",
+    "entities": [
+      {
+        "start": 14,
+        "end": 24,
+        "label": "TIME",
+        "text": "18.02.2024"
+      },
+      {
+        "start": 3,
+        "end": 12,
+        "label": "LOCATION",
+        "text": "ANCHORAGE"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "at anchorage",
+    "source_file": "(11) MV. AYE EVOLUTION SOF.pdf"
+  },
+  {
+    "text": "AT ANCHORAGE  \n(ALL SUNDAYS ARE CHARTER PARTY HOLIDAYS)  \n24.02.2024  \nVESSEL WORKING AT BERTH  ----- -----",
+    "entities": [
+      {
+        "start": 58,
+        "end": 68,
+        "label": "TIME",
+        "text": "24.02.2024"
+      },
+      {
+        "start": 3,
+        "end": 12,
+        "label": "LOCATION",
+        "text": "ANCHORAGE"
+      },
+      {
+        "start": 89,
+        "end": 94,
+        "label": "LOCATION",
+        "text": "BERTH"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "at anchorage",
+    "source_file": "(11) MV. AYE EVOLUTION SOF.pdf"
+  },
+  {
+    "text": "MILOS  WARRIOR  (ON A/C VEDANTA ), WHICH ARRIVED AT 0705",
+    "entities": [],
+    "event_type": "arrival",
+    "pattern": "arrived",
+    "source_file": "(11) MV. AYE EVOLUTION SOF.pdf"
+  },
+  {
+    "text": "HRS ON \n18.02.2024 , SHE WAS BERTHED AT VGCB  AT 1630",
+    "entities": [
+      {
+        "start": 8,
+        "end": 18,
+        "label": "TIME",
+        "text": "18.02.2024"
+      },
+      {
+        "start": 40,
+        "end": 48,
+        "label": "LOCATION",
+        "text": "VGCB  AT"
+      }
+    ],
+    "event_type": "berthing",
+    "pattern": "berthed",
+    "source_file": "(11) MV. AYE EVOLUTION SOF.pdf"
+  },
+  {
+    "text": "AYE EVOLUTION  WAS BERHTED AT VGCB  \n \n \nPRE-BERTHING RAIN DELAYS     :  NIL \n \nSHIP DELAYS        :  NIL \n \nSHORE DELAYS                                    : NIL  \n \nOTHER DELAYS       :  NIL \n \nNON WEATHER WO RKING D AYS DECLARED BY PORT  :  NIL \n \nRAIN/ BAD WEATHER DELAYS     : NIL \n \nMASTER REMARKS:  \n1.",
+    "entities": [
+      {
+        "start": 30,
+        "end": 44,
+        "label": "LOCATION",
+        "text": "VGCB  \n \n \nPRE"
+      },
+      {
+        "start": 59,
+        "end": 65,
+        "label": "LOCATION",
+        "text": "DELAYS"
+      }
+    ],
+    "event_type": "weather",
+    "pattern": "weather delay",
+    "source_file": "(11) MV. AYE EVOLUTION SOF.pdf"
+  },
+  {
+    "text": "HOURS  DATE  DAY \nVESSEL ARRIVED",
+    "entities": [],
+    "event_type": "arrival",
+    "pattern": "vessel arrived",
+    "source_file": "(15) MV. NEW HORIZON SOF.pdf"
+  },
+  {
+    "text": "AS PER C/P AND SALE CONTRACT  \nVESSEL ANCHORED  : 2354 HRS 28.02.2024  WEDN ESDAY  \nVESSEL HEAVE D UP ANCHOR : 2318 HRS 29.02.2024  THURSDAY",
+    "entities": [
+      {
+        "start": 59,
+        "end": 69,
+        "label": "TIME",
+        "text": "28.02.2024"
+      },
+      {
+        "start": 120,
+        "end": 130,
+        "label": "TIME",
+        "text": "29.02.2024"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "anchored",
+    "source_file": "(15) MV. NEW HORIZON SOF.pdf"
+  },
+  {
+    "text": "PILOT BOARDED TH E VESSEL FOR BERTHING  : 0130 HRS 01.03.2024  FRIDAY  \nFIRST LINE ASHORE   : 0318 HRS 01.03.2024  FRIDAY  \nALL FAST AT BERTH – WQ-3 : 0348",
+    "entities": [
+      {
+        "start": 51,
+        "end": 61,
+        "label": "TIME",
+        "text": "01.03.2024"
+      },
+      {
+        "start": 103,
+        "end": 113,
+        "label": "TIME",
+        "text": "01.03.2024"
+      },
+      {
+        "start": 136,
+        "end": 141,
+        "label": "LOCATION",
+        "text": "BERTH"
+      }
+    ],
+    "event_type": "pilot",
+    "pattern": "pilot boarded",
+    "source_file": "(15) MV. NEW HORIZON SOF.pdf"
+  },
+  {
+    "text": "HRS 02.03.2024  SATURDAY  \nCAST OFF  : 2120 HRS 02.03.2024  SATURDAY  \nPILOT D ISEMB ARKED  : 2155 HRS 02.03.2024  SATURDAY  \nVESSEL SAILED  : 2155 HRS 02.03.2024  SATUR DAY \n \n \n \nVESSEL IS A GE ARLES PANAMAX -BULK CARRIER WITH 7 HATCHES / 7 HOLDS.",
+    "entities": [
+      {
+        "start": 4,
+        "end": 14,
+        "label": "TIME",
+        "text": "02.03.2024"
+      },
+      {
+        "start": 48,
+        "end": 58,
+        "label": "TIME",
+        "text": "02.03.2024"
+      },
+      {
+        "start": 103,
+        "end": 113,
+        "label": "TIME",
+        "text": "02.03.2024"
+      },
+      {
+        "start": 152,
+        "end": 162,
+        "label": "TIME",
+        "text": "02.03.2024"
+      }
+    ],
+    "event_type": "departure",
+    "pattern": "vessel sailed",
+    "source_file": "(15) MV. NEW HORIZON SOF.pdf"
+  },
+  {
+    "text": "GREY LUNA  (ON A/C SPONGE/KAI ), WHICH ARRIVED AT 0414",
+    "entities": [],
+    "event_type": "arrival",
+    "pattern": "arrived",
+    "source_file": "(15) MV. NEW HORIZON SOF.pdf"
+  },
+  {
+    "text": "HRS ON 22.02.2024 , \nSHE WAS BERTHED AT WQ-3",
+    "entities": [
+      {
+        "start": 7,
+        "end": 17,
+        "label": "TIME",
+        "text": "22.02.2024"
+      },
+      {
+        "start": 40,
+        "end": 42,
+        "label": "LOCATION",
+        "text": "WQ"
+      }
+    ],
+    "event_type": "berthing",
+    "pattern": "berthed",
+    "source_file": "(15) MV. NEW HORIZON SOF.pdf"
+  },
+  {
+    "text": "MALAK  (ON A/C  JSW STEEL) , WHICH ARRIVED AT 1540",
+    "entities": [],
+    "event_type": "arrival",
+    "pattern": "arrived",
+    "source_file": "(15) MV. NEW HORIZON SOF.pdf"
+  },
+  {
+    "text": "HRS ON 24.02.2024 , SHE WAS BERTHED \nAT EQ-6 AT 0320",
+    "entities": [
+      {
+        "start": 7,
+        "end": 17,
+        "label": "TIME",
+        "text": "24.02.2024"
+      },
+      {
+        "start": 40,
+        "end": 42,
+        "label": "LOCATION",
+        "text": "EQ"
+      }
+    ],
+    "event_type": "berthing",
+    "pattern": "berthed",
+    "source_file": "(15) MV. NEW HORIZON SOF.pdf"
+  },
+  {
+    "text": "VESSEL  ARRIVED WITH 2 CARGO HOLDS 2 & 5 FOR DIS HCARGING AT VIZAG  PORT",
+    "entities": [
+      {
+        "start": 61,
+        "end": 72,
+        "label": "LOCATION",
+        "text": "VIZAG  PORT"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "arrived",
+    "source_file": "(15) MV. NEW HORIZON SOF.pdf"
+  },
+  {
+    "text": "Lr oN 21.06.202s\nIIME/IJA IE VESSEL SAILED FROM OUTER, ALPHA ANCHOMGE\nOF CHATTbGMM PORT.",
+    "entities": [],
+    "event_type": "departure",
+    "pattern": "vessel sailed",
+    "source_file": "(16) MV. TIGER HEBEI-SOF.pdf"
+  },
+  {
+    "text": "H- MTS\n11.06.2023 SUNDAY 0630-0700 00-00-30VESSEL ARRIVED AT KUTUBDIA ANCHOMGE OF CHATTOGMM PORT AT\n0630 HOURS LT ON 11.06.2023 AND VESSEL WAS WAmNG FOR AGENI\nCUSTOM & SURVEYOR TO DONE iNWARD FORMALITIES\n0700-0830 00-01-30AGENTS, CUSTOMS, SURVEYOR & OTHERS PARTY BOARDED THE VESSEL\nAND COMPLETED SURVEY & ARRIVAViNWARD FORMALITIES",
+    "entities": [
+      {
+        "start": 7,
+        "end": 17,
+        "label": "TIME",
+        "text": "11.06.2023"
+      },
+      {
+        "start": 117,
+        "end": 127,
+        "label": "TIME",
+        "text": "11.06.2023"
+      },
+      {
+        "start": 61,
+        "end": 99,
+        "label": "LOCATION",
+        "text": "KUTUBDIA ANCHOMGE OF CHATTOGMM PORT AT"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "vessel arrived",
+    "source_file": "(16) MV. TIGER HEBEI-SOF.pdf"
+  },
+  {
+    "text": "BY USING SHIPS CMNE & GMBS AND CONTINUED BY 4\nHOOt(S\n12.06.2023 MONDAY 0000-1820 00-18-20 DISCHARGING OPEMTION COTMNUED BY 4 HOOKS\n1820-t924 00-01-04I\\U WURK IJUE TO MOTHER VESSEL WAMNG FOR NEfi AVAILABI,T\nHIGH TIDE SCHEDULE FOR SHIMNG FROM KUTUBDIA TO INNE& ALPHA\nANCHORAGE\nt924-2242 00-03-18NO WORK DUE TO MOTHER VESSEL WAS SH]FTING FROM KUTUBDIA TO\nINNER,ALPHA ANCHOMGE PORT UMIT OF CHATTOGMM\nANCHOR AWEIGH:",
+    "entities": [
+      {
+        "start": 53,
+        "end": 63,
+        "label": "TIME",
+        "text": "12.06.2023"
+      }
+    ],
+    "event_type": "departure",
+    "pattern": "anchor aweigh",
+    "source_file": "(16) MV. TIGER HEBEI-SOF.pdf"
+  },
+  {
+    "text": "AT 1924 HRS D/ANCH:2242 HRS ON 12.06.2023\n2242-2400 00-01-18NO WORK DUE TO WAMNG FOR ALONGSIDE UGHTER AND-.",
+    "entities": [
+      {
+        "start": 31,
+        "end": 41,
+        "label": "TIME",
+        "text": "12.06.2023"
+      }
+    ],
+    "event_type": "berthing",
+    "pattern": "alongside",
+    "source_file": "(16) MV. TIGER HEBEI-SOF.pdf"
+  },
+  {
+    "text": "VESSEL WAS WATrING FOR ALONGSIDE UGHTER\nA./C,MK CEMMIC,CBC CEMMIC,AKU CERAMIC AND MEGHNA CEMMICS.wfr,\\CONT PAGE: 04\nCONTINUATION SHEET NOS.",
+    "entities": [],
+    "event_type": "berthing",
+    "pattern": "alongside",
+    "source_file": "(16) MV. TIGER HEBEI-SOF.pdf"
+  },
+  {
+    "text": "\"TIGER HEBEI\"\nDATE DAY FROM-TOTIMEREMARKSD- H- MTS\n0s30-22s0 00-17-20 DISCHARGING OPERATION RESUMED AND COIITINUED BY 4 HOOKS\n22sO-2400 00-01-10DISCHARGING OPEMTION CONTINUED BY 2 HOOKS/ 2 HOOKS IDLE DUE\nTO MOTHER VESSEL WAS WAMNG FOR ALONGSIDE LIGHIER A/C,MK\nCEMMIC.DBL CEMMICS AND MEGHNA CEMMICS\n19.06.2023 MONDAY 0000-0900 00-09-00DISCHARGING OPEMTION CONTINUED BY 2 HOOKS/ 2 H@KS IDLE DUE\nTO MOTHER VESSEL WAS WAMNG FOR ALONGSIDE UGHTER A/C,MK\nCEMMIC,DBL CERAMIC AND MEGHNA CERAMICS AND 2 GANG CANCEL\n0900-1310 00-04-10",
+    "entities": [
+      {
+        "start": 298,
+        "end": 308,
+        "label": "TIME",
+        "text": "19.06.2023"
+      }
+    ],
+    "event_type": "berthing",
+    "pattern": "alongside",
+    "source_file": "(16) MV. TIGER HEBEI-SOF.pdf"
+  },
+  {
+    "text": "BY 2 HOOKS\n1310-1410 00-01-00NO WORK DUE TO MOTHER VESSEL WAS WAMNG FOR ALONGSIDE\nUGHTER ryC,RAK CEMMIC,AKU CEMII4IC,DBL CEMMIC AND MEGHNA\nCEMMICS\n1410- 181000-04-00NO WORK DUE TO HEAVY SWELUNG,S]RONG WIND,SERIOUS ROUGH\nSEA,fuqIN AND BAD WEATHER\n1810-2400 00-0s-s0 DISCHARGING OPEMTION RESUMED AND CONNNUED BY 2 HOOKS\n20.06.2023 TUESDAY 0000-1450 00-14-50 DISCHARGING OPEMTION CONTINUED BY 2 HOOKS\n1450-2400 00-09-10 DISCHARGING OPERATION CONTINUED BY 1 HOOK\n27.06.2023 WEDNESDAY 0000-oEer o0-o8\"3(DISCHARGING OPEMTION CONNNUED BY 1 HOOK BY USING SHIP'S\nCMNE & GfuqB DISCHARGING OF ALL CARGO ON BOARD O( VESSEL\nCOMPLETED AT OEZO HRS LT ON 21.06.2023\nD%-d?00-01-00SURVEYOR\" AGENT AND AUTHORITIES BOARDED,",
+    "entities": [
+      {
+        "start": 318,
+        "end": 328,
+        "label": "TIME",
+        "text": "20.06.2023"
+      },
+      {
+        "start": 459,
+        "end": 469,
+        "label": "TIME",
+        "text": "27.06.2023"
+      },
+      {
+        "start": 639,
+        "end": 649,
+        "label": "TIME",
+        "text": "21.06.2023"
+      },
+      {
+        "start": 624,
+        "end": 638,
+        "label": "LOCATION",
+        "text": "OEZO HRS LT ON"
+      },
+      {
+        "start": 230,
+        "end": 245,
+        "label": "LOCATION",
+        "text": "AND BAD WEATHER"
+      }
+    ],
+    "event_type": "berthing",
+    "pattern": "alongside",
+    "source_file": "(16) MV. TIGER HEBEI-SOF.pdf"
+  },
+  {
+    "text": "COMPLETED DMFT\nSURVEY AND SAILING FORMALITIES\nv?-rloaw-oo-bVESSEL SAILED FoRM oUTER ANCHoMGE ATOE6iO",
+    "entities": [],
+    "event_type": "departure",
+    "pattern": "vessel sailed",
+    "source_file": "(16) MV. TIGER HEBEI-SOF.pdf"
+  },
+  {
+    "text": "*MOTHER VESSEL HATCH NO.2 CARGO DISCHARGING COMPLETED ATCE36",
+    "entities": [],
+    "event_type": "discharging",
+    "pattern": "cargo discharging",
+    "source_file": "(16) MV. TIGER HEBEI-SOF.pdf"
+  },
+  {
+    "text": "HRS ON 21.06.2023\n*MOTHER VESSEL.HATCH NO,3 CARGO DISCHARGING COMPLETED AT 1O3O HRS",
+    "entities": [
+      {
+        "start": 7,
+        "end": 17,
+        "label": "TIME",
+        "text": "21.06.2023"
+      }
+    ],
+    "event_type": "discharging",
+    "pattern": "cargo discharging",
+    "source_file": "(16) MV. TIGER HEBEI-SOF.pdf"
+  },
+  {
+    "text": "ON 19 .06.2023\n*MOTHER VESSEL.HATCH NO.4 CARGO DISCHARGING COMPLETED AT 1450 HRS",
+    "entities": [],
+    "event_type": "discharging",
+    "pattern": "cargo discharging",
+    "source_file": "(16) MV. TIGER HEBEI-SOF.pdf"
+  },
+  {
+    "text": "ON 20 ,06.2023\n*MOTHER VESSEL HATCH NO,5 CARGO DISCHARGING COMPLETED AT O9OO HRS ON 18 .06.2023\nMARITIME AGENCY\nCHITTAGONG",
+    "entities": [],
+    "event_type": "discharging",
+    "pattern": "cargo discharging",
+    "source_file": "(16) MV. TIGER HEBEI-SOF.pdf"
+  },
+  {
+    "text": "MTRS  \n \n \nRECORDS OF WORKING  \n \nPARTICULARS  HOURS  DATE  \nVESSEL ARRIVED",
+    "entities": [],
+    "event_type": "arrival",
+    "pattern": "vessel arrived",
+    "source_file": "(18) MV.ZHE HAI 521 SOF.pdf"
+  },
+  {
+    "text": "HRS 16.02.202 4 \nVESSEL DROPPED ANCHOR  1712",
+    "entities": [],
+    "event_type": "arrival",
+    "pattern": "dropped anchor",
+    "source_file": "(18) MV.ZHE HAI 521 SOF.pdf"
+  },
+  {
+    "text": "HRS  23.02.2024  \nPILOT BOARDED VESSEL FOR BERTHING  0036  HRS  24.02.2024",
+    "entities": [
+      {
+        "start": 5,
+        "end": 15,
+        "label": "TIME",
+        "text": "23.02.2024"
+      },
+      {
+        "start": 64,
+        "end": 74,
+        "label": "TIME",
+        "text": "24.02.2024"
+      }
+    ],
+    "event_type": "pilot",
+    "pattern": "pilot boarded",
+    "source_file": "(18) MV.ZHE HAI 521 SOF.pdf"
+  },
+  {
+    "text": "HRS  24.02.2024  \nALL FAST ALONGSIDE BERTH",
+    "entities": [
+      {
+        "start": 5,
+        "end": 15,
+        "label": "TIME",
+        "text": "24.02.2024"
+      }
+    ],
+    "event_type": "berthing",
+    "pattern": "alongside",
+    "source_file": "(18) MV.ZHE HAI 521 SOF.pdf"
+  },
+  {
+    "text": "HRS  25.02.2024  \nPILOT BOARDED FOR VESSEL SHIFTING  0615",
+    "entities": [
+      {
+        "start": 5,
+        "end": 15,
+        "label": "TIME",
+        "text": "25.02.2024"
+      }
+    ],
+    "event_type": "pilot",
+    "pattern": "pilot boarded",
+    "source_file": "(18) MV.ZHE HAI 521 SOF.pdf"
+  },
+  {
+    "text": "NO -BB-3A 0736 HRS  25.02.2024  \nALL FAST ALONGSIDE BERTH",
+    "entities": [
+      {
+        "start": 20,
+        "end": 30,
+        "label": "TIME",
+        "text": "25.02.2024"
+      }
+    ],
+    "event_type": "berthing",
+    "pattern": "alongside",
+    "source_file": "(18) MV.ZHE HAI 521 SOF.pdf"
+  },
+  {
+    "text": "HRS  27.02.2024  \nCAST OFF  0618 HRS  27.02.2024  \nPILOT DISEMBARKED      0745 HRS  27.02.2024",
+    "entities": [
+      {
+        "start": 5,
+        "end": 15,
+        "label": "TIME",
+        "text": "27.02.2024"
+      },
+      {
+        "start": 38,
+        "end": 48,
+        "label": "TIME",
+        "text": "27.02.2024"
+      },
+      {
+        "start": 84,
+        "end": 94,
+        "label": "TIME",
+        "text": "27.02.2024"
+      }
+    ],
+    "event_type": "pilot",
+    "pattern": "pilot disembarked",
+    "source_file": "(18) MV.ZHE HAI 521 SOF.pdf"
+  },
+  {
+    "text": "2. VESSEL PROVIDED ALL 5 HA TCHES AT ALL TIMES TO STEVEDORES FOR CARGO LOADING  AND \nSHIPPER’S LOADED ENTIRE CARGO US ING SH ORE HMC  & SHIP ’S CRANE.",
+    "entities": [
+      {
+        "start": 37,
+        "end": 92,
+        "label": "LOCATION",
+        "text": "ALL TIMES TO STEVEDORES FOR CARGO LOADING  AND \nSHIPPER"
+      }
+    ],
+    "event_type": "loading",
+    "pattern": "cargo loading",
+    "source_file": "(18) MV.ZHE HAI 521 SOF.pdf"
+  },
+  {
+    "text": "3. VESSEL PROVIDED ALL HATCHES,  4 CRANES X 36 MTS SWL AND 4 GRABS X 13 CBM  TO STEVEDORES AT \nALL TIMES FOR CARGO LOADING.",
+    "entities": [
+      {
+        "start": 95,
+        "end": 122,
+        "label": "LOCATION",
+        "text": "ALL TIMES FOR CARGO LOADING"
+      }
+    ],
+    "event_type": "loading",
+    "pattern": "cargo loading",
+    "source_file": "(18) MV.ZHE HAI 521 SOF.pdf"
+  },
+  {
+    "text": "6. WEATHER COND ITION DURING ENTIRE VESSELS STAY WAS FINE FOR CARGO WORK AND VESSEL DOES \nNOT ACCEPT ANY WEATHER DELAYS WHATSOEVER .",
+    "entities": [],
+    "event_type": "weather",
+    "pattern": "weather delay",
+    "source_file": "(18) MV.ZHE HAI 521 SOF.pdf"
+  },
+  {
+    "text": "DATE  DAY \nVESSEL ARRIVED",
+    "entities": [],
+    "event_type": "arrival",
+    "pattern": "vessel arrived",
+    "source_file": "(23) MV ELEEN NEPTUNE UPDATED DRAFT SOF 1345 DATE.27.02.2024.pdf"
+  },
+  {
+    "text": "AT GOPALPUR PORT  1925  22.02.2024  THURSDAY  \nNOTICE OF READINESSTENDERED  1925  22.02.2024  THURSDAY  \nNOTICE OF READINESSACCEPTED  1504 HRS ON 23.02.2024  \nVESSEL DROP ANCHOR  2040  22.02.2024  THURSDAY  \nVESSELHEAVED UP ANCHOR  1750  23.02.2024  FRIDAY  \nPILOT BOARDED FOR BERTHING  1815  23.02.2024  FRIDAY  \nVESSEL FIRST LINE ASHORE",
+    "entities": [
+      {
+        "start": 24,
+        "end": 34,
+        "label": "TIME",
+        "text": "22.02.2024"
+      },
+      {
+        "start": 82,
+        "end": 92,
+        "label": "TIME",
+        "text": "22.02.2024"
+      },
+      {
+        "start": 146,
+        "end": 156,
+        "label": "TIME",
+        "text": "23.02.2024"
+      },
+      {
+        "start": 185,
+        "end": 195,
+        "label": "TIME",
+        "text": "22.02.2024"
+      },
+      {
+        "start": 238,
+        "end": 248,
+        "label": "TIME",
+        "text": "23.02.2024"
+      },
+      {
+        "start": 293,
+        "end": 303,
+        "label": "TIME",
+        "text": "23.02.2024"
+      },
+      {
+        "start": 3,
+        "end": 16,
+        "label": "LOCATION",
+        "text": "GOPALPUR PORT"
+      }
+    ],
+    "event_type": "pilot",
+    "pattern": "pilot boarded",
+    "source_file": "(23) MV ELEEN NEPTUNE UPDATED DRAFT SOF 1345 DATE.27.02.2024.pdf"
+  },
+  {
+    "text": "NO -3 1854  23.02.2024  FRIDAY  \nVESSEL ALL MADE FAST AT BERTH NO - 3 1915  23.02.2024  FRIDAY  \nPILOT DISEMBARKED  1930  23.02.2024  FRIDAY  \nGANG -WAY DOWN  1930  23.02.2024  FRIDAY  \nCUSTOMS BOARDED  1930  23.02.2024  FRIDAY  \nINITIAL DRAFT SURVEY COMMENCED  1930  23.02.2024  FRIDAY  \nINITIAL DRAFT SURVEY COMPLETED  2030",
+    "entities": [
+      {
+        "start": 12,
+        "end": 22,
+        "label": "TIME",
+        "text": "23.02.2024"
+      },
+      {
+        "start": 76,
+        "end": 86,
+        "label": "TIME",
+        "text": "23.02.2024"
+      },
+      {
+        "start": 122,
+        "end": 132,
+        "label": "TIME",
+        "text": "23.02.2024"
+      },
+      {
+        "start": 165,
+        "end": 175,
+        "label": "TIME",
+        "text": "23.02.2024"
+      },
+      {
+        "start": 209,
+        "end": 219,
+        "label": "TIME",
+        "text": "23.02.2024"
+      },
+      {
+        "start": 268,
+        "end": 278,
+        "label": "TIME",
+        "text": "23.02.2024"
+      },
+      {
+        "start": 57,
+        "end": 65,
+        "label": "LOCATION",
+        "text": "BERTH NO"
+      }
+    ],
+    "event_type": "pilot",
+    "pattern": "pilot disembarked",
+    "source_file": "(23) MV ELEEN NEPTUNE UPDATED DRAFT SOF 1345 DATE.27.02.2024.pdf"
+  },
+  {
+    "text": "23.02.2024  FRIDAY  \nCUSTOMS CLEARANCE GRANTED  2030  23.02.2024  FRIDAY  \nHATCH COVER OPEN & GRAB CONNECTION COMMENCED  2030  23.02.2024  FRIDAY  \nHATCH COVER OPEN & GRAB CONNECTION COMPLETED  2200  23.02.2024  FRIDAY  \nHATCH INSPECTION COMMENCED  2200  23.02.2024  FRIDAY  \nHATCH INSPECTION COMPLETED  2300  23.02.2024  FRIDAY  \nLOADING COMMENCED  0800 24.02.2024  SATURDAY  \nLOADING COMPLETED   .02.2024  SUNDAY  \nFINIAL DRAFT SURVEY COMMENCED      .02.2024  SUNDAY  \nFINAL DRAFT SURVEY COMPLETED      .02.2024  SUNDAY  \nDOCUMENTATION COMPLETED      .02.2024  SUNDAY  \nVESSEL READY TO SAIL      .02.2024  SUNDAY  \n \n \n \n \nPILOT BOARDED FOR SAILING       .02.2024  SUNDAY  \nVESSEL ALL CAST OFF       .02.2024  SUNDAY  \nPILOT DISEMBARKED       .02.2024  SUNDAY  \nTOTAL CARGO LOADED AS PER FINAL DRAFT SURVEY   53,420.000 WMT IRON  ORE FINES IN BULK  \nNO.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "label": "TIME",
+        "text": "23.02.2024"
+      },
+      {
+        "start": 54,
+        "end": 64,
+        "label": "TIME",
+        "text": "23.02.2024"
+      },
+      {
+        "start": 127,
+        "end": 137,
+        "label": "TIME",
+        "text": "23.02.2024"
+      },
+      {
+        "start": 200,
+        "end": 210,
+        "label": "TIME",
+        "text": "23.02.2024"
+      },
+      {
+        "start": 255,
+        "end": 265,
+        "label": "TIME",
+        "text": "23.02.2024"
+      },
+      {
+        "start": 310,
+        "end": 320,
+        "label": "TIME",
+        "text": "23.02.2024"
+      },
+      {
+        "start": 355,
+        "end": 365,
+        "label": "TIME",
+        "text": "24.02.2024"
+      },
+      {
+        "start": 845,
+        "end": 854,
+        "label": "LOCATION",
+        "text": "BULK  \nNO"
+      }
+    ],
+    "event_type": "loading",
+    "pattern": "loading commenced",
+    "source_file": "(23) MV ELEEN NEPTUNE UPDATED DRAFT SOF 1345 DATE.27.02.2024.pdf"
+  },
+  {
+    "text": "23.02.2024  FRIDAY  \nCUSTOMS CLEARANCE GRANTED  2030  23.02.2024  FRIDAY  \nHATCH COVER OPEN & GRAB CONNECTION COMMENCED  2030  23.02.2024  FRIDAY  \nHATCH COVER OPEN & GRAB CONNECTION COMPLETED  2200  23.02.2024  FRIDAY  \nHATCH INSPECTION COMMENCED  2200  23.02.2024  FRIDAY  \nHATCH INSPECTION COMPLETED  2300  23.02.2024  FRIDAY  \nLOADING COMMENCED  0800 24.02.2024  SATURDAY  \nLOADING COMPLETED   .02.2024  SUNDAY  \nFINIAL DRAFT SURVEY COMMENCED      .02.2024  SUNDAY  \nFINAL DRAFT SURVEY COMPLETED      .02.2024  SUNDAY  \nDOCUMENTATION COMPLETED      .02.2024  SUNDAY  \nVESSEL READY TO SAIL      .02.2024  SUNDAY  \n \n \n \n \nPILOT BOARDED FOR SAILING       .02.2024  SUNDAY  \nVESSEL ALL CAST OFF       .02.2024  SUNDAY  \nPILOT DISEMBARKED       .02.2024  SUNDAY  \nTOTAL CARGO LOADED AS PER FINAL DRAFT SURVEY   53,420.000 WMT IRON  ORE FINES IN BULK  \nNO.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "label": "TIME",
+        "text": "23.02.2024"
+      },
+      {
+        "start": 54,
+        "end": 64,
+        "label": "TIME",
+        "text": "23.02.2024"
+      },
+      {
+        "start": 127,
+        "end": 137,
+        "label": "TIME",
+        "text": "23.02.2024"
+      },
+      {
+        "start": 200,
+        "end": 210,
+        "label": "TIME",
+        "text": "23.02.2024"
+      },
+      {
+        "start": 255,
+        "end": 265,
+        "label": "TIME",
+        "text": "23.02.2024"
+      },
+      {
+        "start": 310,
+        "end": 320,
+        "label": "TIME",
+        "text": "23.02.2024"
+      },
+      {
+        "start": 355,
+        "end": 365,
+        "label": "TIME",
+        "text": "24.02.2024"
+      },
+      {
+        "start": 845,
+        "end": 854,
+        "label": "LOCATION",
+        "text": "BULK  \nNO"
+      }
+    ],
+    "event_type": "pilot",
+    "pattern": "pilot boarded",
+    "source_file": "(23) MV ELEEN NEPTUNE UPDATED DRAFT SOF 1345 DATE.27.02.2024.pdf"
+  },
+  {
+    "text": "HATCH WISE COMMENCEMENT / COMPLETION TIMINGS AT GOPALPUR: - \nH/NO  LOADING COMMENCED             LOADINGCOMPLETED  QUANTITY LOADED  \nI          0800",
+    "entities": [
+      {
+        "start": 48,
+        "end": 56,
+        "label": "LOCATION",
+        "text": "GOPALPUR"
+      }
+    ],
+    "event_type": "loading",
+    "pattern": "loading commenced",
+    "source_file": "(23) MV ELEEN NEPTUNE UPDATED DRAFT SOF 1345 DATE.27.02.2024.pdf"
+  },
+  {
+    "text": "2ND \n3RD \n 4 S/C  \n4 S/C  \n4 S/C  \n 4 S/C  \n4 S/C  \n4 S/C  \n  \n  7100.000  WMT  LOADING COMMENCED \nAT 0 800 HRS / \n24.02.2024  \n25.02.2024  1ST",
+    "entities": [
+      {
+        "start": 115,
+        "end": 125,
+        "label": "TIME",
+        "text": "24.02.2024"
+      },
+      {
+        "start": 128,
+        "end": 138,
+        "label": "TIME",
+        "text": "25.02.2024"
+      }
+    ],
+    "event_type": "loading",
+    "pattern": "loading commenced",
+    "source_file": "(23) MV ELEEN NEPTUNE UPDATED DRAFT SOF 1345 DATE.27.02.2024.pdf"
+  },
+  {
+    "text": "(ARRIVED) TO 1815 HRS 23.02.2024",
+    "entities": [
+      {
+        "start": 22,
+        "end": 32,
+        "label": "TIME",
+        "text": "23.02.2024"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "arrived",
+    "source_file": "(23) MV ELEEN NEPTUNE UPDATED DRAFT SOF 1345 DATE.27.02.2024.pdf"
+  },
+  {
+    "text": "Page 4 of 4 \n 4.WEATHER CONDITION DURING ENTIRE VESSELS STAY WAS FINE FOR CARGO WORK AND \nVESSEL DOES NOT ACCEPT ANY WEATHER DELAYS WHATSOEVER EXCEPT AS RECORDED \n/ CERTIFIED ABOVE.",
+    "entities": [],
+    "event_type": "weather",
+    "pattern": "weather delay",
+    "source_file": "(23) MV ELEEN NEPTUNE UPDATED DRAFT SOF 1345 DATE.27.02.2024.pdf"
+  },
+  {
+    "text": "VESSEL PROVIDED ALL HATCHES, ALL 4 GEARS TO STEVEDORES AT ALL TIMES FOR \nCARGO LOADING .",
+    "entities": [
+      {
+        "start": 58,
+        "end": 86,
+        "label": "LOCATION",
+        "text": "ALL TIMES FOR \nCARGO LOADING"
+      }
+    ],
+    "event_type": "loading",
+    "pattern": "cargo loading",
+    "source_file": "(23) MV ELEEN NEPTUNE UPDATED DRAFT SOF 1345 DATE.27.02.2024.pdf"
+  },
+  {
+    "text": "1930  VESSEL ARRIVED  PARADIP PORT   \n  1930  NOTICE OF READINESS TENDERED  \n  AS PER C/P  NOTICE OF READINESS ACCEPTED  \n  1930  LIMITED FREE PRATIQUE GRANTED  \n  1930  DROPPED ANCHOR  \n24/10/2023 /TUESDAY   1100",
+    "entities": [
+      {
+        "start": 187,
+        "end": 197,
+        "label": "TIME",
+        "text": "24/10/2023"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "vessel arrived",
+    "source_file": "(24) MV. MIM VANGELIS JR -DRAFT SOF.pdf"
+  },
+  {
+    "text": "PILOT ON BOARD  \n 1100  1154  VESSEL UNDERE WAY/SECURING BERTH  \n  1154  FIRST  LINE ASHORE  \n 1154  1212  VESSEL ALL MADE FAST",
+    "entities": [],
+    "event_type": "pilot",
+    "pattern": "pilot on board",
+    "source_file": "(24) MV. MIM VANGELIS JR -DRAFT SOF.pdf"
+  },
+  {
+    "text": "(FERTILISER BERTH –II) \n 1212  1245  GANGWAY LOWERED  \n  1245  CUSTOMS BOARDED VESSEL   \n  1245  INITIAL DRAFT SURVEY COMMENCED  \n 1245  1345  INITIAL DRAFT SURVEY COMPLETED   \n  1345  CUSTOMS CLEARED VESSEL  \n  1345 DISCH ARGE COMMENCED  \n       /10/2023  /    DISCHARGE COMPLETED  \n   FINAL DRAFT SURVEY COMMENCED  \n   FINAL DRAFT SURVEY COMPLETED  \n   PILOT BOARDED  \n   ALL CAST OFF  \n   PILOT DISEMBERKED  \n \nTOTAL QUANTITY CARGO DISCHARGED \nAS PER FINAL DRAUGHT  SURVEY  JORDANIAN ROC K PHOSPHATE IN BULK  ( 75,450  MT) \n \n \nNOTE :   ALL CARGO HAS BEEN DISCHARGED IN GOOD ORDER AND CONDITIONS AS PER \nB/L WITHOUT ANY DAMAGE TO THE VESSEL.",
+    "entities": [
+      {
+        "start": 506,
+        "end": 510,
+        "label": "LOCATION",
+        "text": "BULK"
+      },
+      {
+        "start": 573,
+        "end": 605,
+        "label": "LOCATION",
+        "text": "GOOD ORDER AND CONDITIONS AS PER"
+      }
+    ],
+    "event_type": "pilot",
+    "pattern": "pilot boarded",
+    "source_file": "(24) MV. MIM VANGELIS JR -DRAFT SOF.pdf"
+  },
+  {
+    "text": "VESSEL/OWNERS DOESNT ACCEPT ANY PROTEST AND/O R CLAIM AFTER VESSEL SAILED \nFROM PARADIP PORT.",
+    "entities": [],
+    "event_type": "departure",
+    "pattern": "vessel sailed",
+    "source_file": "(24) MV. MIM VANGELIS JR -DRAFT SOF.pdf"
+  },
+  {
+    "text": "NO. : 289691  DT : 20.01.2024    \n \n \nRadio Pratique Granted             ::      1207   hrs  on     21.01.2024 \nVessel Arrived at Paradip Roads  ::      0006   hrs  on 22.01.2024 \nVessel Anchored  ::      0006   hrs  on 22.01.2024 \nNotice of Readiness Tendered  ::      0006   hrs  on 22.01.2024 \nNotice of Readiness Accepted  ::     As per relevant Charter Party  \nVessel Heaved -up Anchor  :: 1336   hrs on     25.01.2024 \nPilot On Board  :: 1448   hrs on  25.01.2024 \nFirst Line Ashored at PICT -I :: 1530   hrs on 25.01.2024 \nVessel Made All Fast at PICT -I ::   1600   hrs on 25.01.2024 \nGangway Placed    ::   1630   hrs on 25.01.2024 \nInitial Draft Survey Commenced  :: 1630   hrs on 25.01.2024 \nHold Inspection Commenced  ::   1645  hrs  on  25.01.2024  \nInitial Draft Survey  Completed  :: 1730   hrs on 25.01.2024 \nCustoms Clearance Granted  ::   1730   hrs on 25.01.2024 \nHold Inspection Completed  ::   1745  hrs  on  25.01.2024  \nNo. of  Hatches / Cranes Provided by vessel   ::   5/ 4 X 30.0 MT   \nCommenced Loading by Shore  Cranes  ::   1800  hrs on  25.01.2024 \nCommenced Loading by Ships Cranes  ::   0745  hrs on  26.01.2024  \nCompleted Loading by Ships Cranes  ::   0000  hrs  on  00.01.2024  \nCompleted Loading by Shore  Cranes  ::   0000  hrs on 00.00.2024  \nFinal Draught Survey Commenced  :: 0000  hrs on 00.01.2024  \nFinal Draught Survey Completed  :: 0000  hrs on 00.01.2024 \nLashing Completed  ::          hrs  on 00.01.2024 \nQuantity Loaded at Paradip          \nCONTINUOUS CASTING STEEL SLABS      (Gross Weight)  ::     00000.000  MT \n                                                                           (Net Weight)      ::      00000.000  MT \n                                                                           (Nos. of Slabs )    ::      0000 Pcs \nDocumentation Completed  ::          hrs  on  00.01.2024 \nVessel Given Readiness for Sailing  ::         hrs  on  00.01.2024 \nPilot on Board for Sailing  ::   hrs on  00.01.2024",
+    "entities": [
+      {
+        "start": 81,
+        "end": 91,
+        "label": "TIME",
+        "text": "1207"
+      },
+      {
+        "start": 153,
+        "end": 163,
+        "label": "TIME",
+        "text": "0006"
+      },
+      {
+        "start": 205,
+        "end": 215,
+        "label": "TIME",
+        "text": "0006"
+      },
+      {
+        "start": 270,
+        "end": 280,
+        "label": "TIME",
+        "text": "0006"
+      },
+      {
+        "start": 395,
+        "end": 405,
+        "label": "TIME",
+        "text": "1336"
+      },
+      {
+        "start": 444,
+        "end": 454,
+        "label": "TIME",
+        "text": "1448"
+      },
+      {
+        "start": 504,
+        "end": 514,
+        "label": "TIME",
+        "text": "1530"
+      },
+      {
+        "start": 567,
+        "end": 577,
+        "label": "TIME",
+        "text": "1600"
+      },
+      {
+        "start": 616,
+        "end": 626,
+        "label": "TIME",
+        "text": "1630"
+      },
+      {
+        "start": 677,
+        "end": 687,
+        "label": "TIME",
+        "text": "1630"
+      },
+      {
+        "start": 735,
+        "end": 744,
+        "label": "TIME",
+        "text": "1645"
+      },
+      {
+        "start": 799,
+        "end": 809,
+        "label": "TIME",
+        "text": "1730"
+      },
+      {
+        "start": 857,
+        "end": 867,
+        "label": "TIME",
+        "text": "1730"
+      },
+      {
+        "start": 915,
+        "end": 924,
+        "label": "TIME",
+        "text": "1745"
+      },
+      {
+        "start": 1053,
+        "end": 1062,
+        "label": "TIME",
+        "text": "1800"
+      },
+      {
+        "start": 1119,
+        "end": 1128,
+        "label": "TIME",
+        "text": "0745"
+      },
+      {
+        "start": 1186,
+        "end": 1195,
+        "label": "TIME",
+        "text": "0000"
+      },
+      {
+        "start": 1255,
+        "end": 1264,
+        "label": "TIME",
+        "text": "0000"
+      },
+      {
+        "start": 1316,
+        "end": 1325,
+        "label": "TIME",
+        "text": "0000"
+      },
+      {
+        "start": 1377,
+        "end": 1386,
+        "label": "TIME",
+        "text": "0000"
+      },
+      {
+        "start": 19,
+        "end": 29,
+        "label": "TIME",
+        "text": "20.01.2024"
+      },
+      {
+        "start": 100,
+        "end": 110,
+        "label": "TIME",
+        "text": "21.01.2024"
+      },
+      {
+        "start": 168,
+        "end": 178,
+        "label": "TIME",
+        "text": "22.01.2024"
+      },
+      {
+        "start": 220,
+        "end": 230,
+        "label": "TIME",
+        "text": "22.01.2024"
+      },
+      {
+        "start": 285,
+        "end": 295,
+        "label": "TIME",
+        "text": "22.01.2024"
+      },
+      {
+        "start": 413,
+        "end": 423,
+        "label": "TIME",
+        "text": "25.01.2024"
+      },
+      {
+        "start": 459,
+        "end": 469,
+        "label": "TIME",
+        "text": "25.01.2024"
+      },
+      {
+        "start": 518,
+        "end": 528,
+        "label": "TIME",
+        "text": "25.01.2024"
+      },
+      {
+        "start": 581,
+        "end": 591,
+        "label": "TIME",
+        "text": "25.01.2024"
+      },
+      {
+        "start": 630,
+        "end": 640,
+        "label": "TIME",
+        "text": "25.01.2024"
+      },
+      {
+        "start": 691,
+        "end": 701,
+        "label": "TIME",
+        "text": "25.01.2024"
+      },
+      {
+        "start": 750,
+        "end": 760,
+        "label": "TIME",
+        "text": "25.01.2024"
+      },
+      {
+        "start": 813,
+        "end": 823,
+        "label": "TIME",
+        "text": "25.01.2024"
+      },
+      {
+        "start": 871,
+        "end": 881,
+        "label": "TIME",
+        "text": "25.01.2024"
+      },
+      {
+        "start": 930,
+        "end": 940,
+        "label": "TIME",
+        "text": "25.01.2024"
+      },
+      {
+        "start": 1067,
+        "end": 1077,
+        "label": "TIME",
+        "text": "25.01.2024"
+      },
+      {
+        "start": 1133,
+        "end": 1143,
+        "label": "TIME",
+        "text": "26.01.2024"
+      },
+      {
+        "start": 1201,
+        "end": 1211,
+        "label": "TIME",
+        "text": "00.01.2024"
+      },
+      {
+        "start": 1268,
+        "end": 1278,
+        "label": "TIME",
+        "text": "00.00.2024"
+      },
+      {
+        "start": 1329,
+        "end": 1339,
+        "label": "TIME",
+        "text": "00.01.2024"
+      },
+      {
+        "start": 1390,
+        "end": 1400,
+        "label": "TIME",
+        "text": "00.01.2024"
+      },
+      {
+        "start": 1441,
+        "end": 1451,
+        "label": "TIME",
+        "text": "00.01.2024"
+      },
+      {
+        "start": 1839,
+        "end": 1849,
+        "label": "TIME",
+        "text": "00.01.2024"
+      },
+      {
+        "start": 1907,
+        "end": 1917,
+        "label": "TIME",
+        "text": "00.01.2024"
+      },
+      {
+        "start": 1960,
+        "end": 1970,
+        "label": "TIME",
+        "text": "00.01.2024"
+      },
+      {
+        "start": 130,
+        "end": 143,
+        "label": "LOCATION",
+        "text": "Paradip Roads"
+      },
+      {
+        "start": 493,
+        "end": 497,
+        "label": "LOCATION",
+        "text": "PICT"
+      },
+      {
+        "start": 554,
+        "end": 558,
+        "label": "LOCATION",
+        "text": "PICT"
+      },
+      {
+        "start": 1472,
+        "end": 1520,
+        "label": "LOCATION",
+        "text": "Paradip          \nCONTINUOUS CASTING STEEL SLABS"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "vessel arrived",
+    "source_file": "(25) SOF (ST-CERGUE).pdf"
+  },
+  {
+    "text": "NO. : 289691  DT : 20.01.2024    \n \n \nRadio Pratique Granted             ::      1207   hrs  on     21.01.2024 \nVessel Arrived at Paradip Roads  ::      0006   hrs  on 22.01.2024 \nVessel Anchored  ::      0006   hrs  on 22.01.2024 \nNotice of Readiness Tendered  ::      0006   hrs  on 22.01.2024 \nNotice of Readiness Accepted  ::     As per relevant Charter Party  \nVessel Heaved -up Anchor  :: 1336   hrs on     25.01.2024 \nPilot On Board  :: 1448   hrs on  25.01.2024 \nFirst Line Ashored at PICT -I :: 1530   hrs on 25.01.2024 \nVessel Made All Fast at PICT -I ::   1600   hrs on 25.01.2024 \nGangway Placed    ::   1630   hrs on 25.01.2024 \nInitial Draft Survey Commenced  :: 1630   hrs on 25.01.2024 \nHold Inspection Commenced  ::   1645  hrs  on  25.01.2024  \nInitial Draft Survey  Completed  :: 1730   hrs on 25.01.2024 \nCustoms Clearance Granted  ::   1730   hrs on 25.01.2024 \nHold Inspection Completed  ::   1745  hrs  on  25.01.2024  \nNo. of  Hatches / Cranes Provided by vessel   ::   5/ 4 X 30.0 MT   \nCommenced Loading by Shore  Cranes  ::   1800  hrs on  25.01.2024 \nCommenced Loading by Ships Cranes  ::   0745  hrs on  26.01.2024  \nCompleted Loading by Ships Cranes  ::   0000  hrs  on  00.01.2024  \nCompleted Loading by Shore  Cranes  ::   0000  hrs on 00.00.2024  \nFinal Draught Survey Commenced  :: 0000  hrs on 00.01.2024  \nFinal Draught Survey Completed  :: 0000  hrs on 00.01.2024 \nLashing Completed  ::          hrs  on 00.01.2024 \nQuantity Loaded at Paradip          \nCONTINUOUS CASTING STEEL SLABS      (Gross Weight)  ::     00000.000  MT \n                                                                           (Net Weight)      ::      00000.000  MT \n                                                                           (Nos. of Slabs )    ::      0000 Pcs \nDocumentation Completed  ::          hrs  on  00.01.2024 \nVessel Given Readiness for Sailing  ::         hrs  on  00.01.2024 \nPilot on Board for Sailing  ::   hrs on  00.01.2024",
+    "entities": [
+      {
+        "start": 81,
+        "end": 91,
+        "label": "TIME",
+        "text": "1207"
+      },
+      {
+        "start": 153,
+        "end": 163,
+        "label": "TIME",
+        "text": "0006"
+      },
+      {
+        "start": 205,
+        "end": 215,
+        "label": "TIME",
+        "text": "0006"
+      },
+      {
+        "start": 270,
+        "end": 280,
+        "label": "TIME",
+        "text": "0006"
+      },
+      {
+        "start": 395,
+        "end": 405,
+        "label": "TIME",
+        "text": "1336"
+      },
+      {
+        "start": 444,
+        "end": 454,
+        "label": "TIME",
+        "text": "1448"
+      },
+      {
+        "start": 504,
+        "end": 514,
+        "label": "TIME",
+        "text": "1530"
+      },
+      {
+        "start": 567,
+        "end": 577,
+        "label": "TIME",
+        "text": "1600"
+      },
+      {
+        "start": 616,
+        "end": 626,
+        "label": "TIME",
+        "text": "1630"
+      },
+      {
+        "start": 677,
+        "end": 687,
+        "label": "TIME",
+        "text": "1630"
+      },
+      {
+        "start": 735,
+        "end": 744,
+        "label": "TIME",
+        "text": "1645"
+      },
+      {
+        "start": 799,
+        "end": 809,
+        "label": "TIME",
+        "text": "1730"
+      },
+      {
+        "start": 857,
+        "end": 867,
+        "label": "TIME",
+        "text": "1730"
+      },
+      {
+        "start": 915,
+        "end": 924,
+        "label": "TIME",
+        "text": "1745"
+      },
+      {
+        "start": 1053,
+        "end": 1062,
+        "label": "TIME",
+        "text": "1800"
+      },
+      {
+        "start": 1119,
+        "end": 1128,
+        "label": "TIME",
+        "text": "0745"
+      },
+      {
+        "start": 1186,
+        "end": 1195,
+        "label": "TIME",
+        "text": "0000"
+      },
+      {
+        "start": 1255,
+        "end": 1264,
+        "label": "TIME",
+        "text": "0000"
+      },
+      {
+        "start": 1316,
+        "end": 1325,
+        "label": "TIME",
+        "text": "0000"
+      },
+      {
+        "start": 1377,
+        "end": 1386,
+        "label": "TIME",
+        "text": "0000"
+      },
+      {
+        "start": 19,
+        "end": 29,
+        "label": "TIME",
+        "text": "20.01.2024"
+      },
+      {
+        "start": 100,
+        "end": 110,
+        "label": "TIME",
+        "text": "21.01.2024"
+      },
+      {
+        "start": 168,
+        "end": 178,
+        "label": "TIME",
+        "text": "22.01.2024"
+      },
+      {
+        "start": 220,
+        "end": 230,
+        "label": "TIME",
+        "text": "22.01.2024"
+      },
+      {
+        "start": 285,
+        "end": 295,
+        "label": "TIME",
+        "text": "22.01.2024"
+      },
+      {
+        "start": 413,
+        "end": 423,
+        "label": "TIME",
+        "text": "25.01.2024"
+      },
+      {
+        "start": 459,
+        "end": 469,
+        "label": "TIME",
+        "text": "25.01.2024"
+      },
+      {
+        "start": 518,
+        "end": 528,
+        "label": "TIME",
+        "text": "25.01.2024"
+      },
+      {
+        "start": 581,
+        "end": 591,
+        "label": "TIME",
+        "text": "25.01.2024"
+      },
+      {
+        "start": 630,
+        "end": 640,
+        "label": "TIME",
+        "text": "25.01.2024"
+      },
+      {
+        "start": 691,
+        "end": 701,
+        "label": "TIME",
+        "text": "25.01.2024"
+      },
+      {
+        "start": 750,
+        "end": 760,
+        "label": "TIME",
+        "text": "25.01.2024"
+      },
+      {
+        "start": 813,
+        "end": 823,
+        "label": "TIME",
+        "text": "25.01.2024"
+      },
+      {
+        "start": 871,
+        "end": 881,
+        "label": "TIME",
+        "text": "25.01.2024"
+      },
+      {
+        "start": 930,
+        "end": 940,
+        "label": "TIME",
+        "text": "25.01.2024"
+      },
+      {
+        "start": 1067,
+        "end": 1077,
+        "label": "TIME",
+        "text": "25.01.2024"
+      },
+      {
+        "start": 1133,
+        "end": 1143,
+        "label": "TIME",
+        "text": "26.01.2024"
+      },
+      {
+        "start": 1201,
+        "end": 1211,
+        "label": "TIME",
+        "text": "00.01.2024"
+      },
+      {
+        "start": 1268,
+        "end": 1278,
+        "label": "TIME",
+        "text": "00.00.2024"
+      },
+      {
+        "start": 1329,
+        "end": 1339,
+        "label": "TIME",
+        "text": "00.01.2024"
+      },
+      {
+        "start": 1390,
+        "end": 1400,
+        "label": "TIME",
+        "text": "00.01.2024"
+      },
+      {
+        "start": 1441,
+        "end": 1451,
+        "label": "TIME",
+        "text": "00.01.2024"
+      },
+      {
+        "start": 1839,
+        "end": 1849,
+        "label": "TIME",
+        "text": "00.01.2024"
+      },
+      {
+        "start": 1907,
+        "end": 1917,
+        "label": "TIME",
+        "text": "00.01.2024"
+      },
+      {
+        "start": 1960,
+        "end": 1970,
+        "label": "TIME",
+        "text": "00.01.2024"
+      },
+      {
+        "start": 130,
+        "end": 143,
+        "label": "LOCATION",
+        "text": "Paradip Roads"
+      },
+      {
+        "start": 493,
+        "end": 497,
+        "label": "LOCATION",
+        "text": "PICT"
+      },
+      {
+        "start": 554,
+        "end": 558,
+        "label": "LOCATION",
+        "text": "PICT"
+      },
+      {
+        "start": 1472,
+        "end": 1520,
+        "label": "LOCATION",
+        "text": "Paradip          \nCONTINUOUS CASTING STEEL SLABS"
+      }
+    ],
+    "event_type": "pilot",
+    "pattern": "pilot on board",
+    "source_file": "(25) SOF (ST-CERGUE).pdf"
+  },
+  {
+    "text": "All Line Cast Off    ::   hrs on  00.01.2024 \nVessel Sailed  ::           hrs on  00.01.2024 \n \nPort Working Hours    : 0600 hrs to 1400 hrs, 1400 hrs to 2200 hrs  & 2200 hrs to 0600 hrs.",
+    "entities": [
+      {
+        "start": 120,
+        "end": 128,
+        "label": "TIME",
+        "text": "0600"
+      },
+      {
+        "start": 132,
+        "end": 140,
+        "label": "TIME",
+        "text": "1400"
+      },
+      {
+        "start": 142,
+        "end": 150,
+        "label": "TIME",
+        "text": "1400"
+      },
+      {
+        "start": 154,
+        "end": 162,
+        "label": "TIME",
+        "text": "2200"
+      },
+      {
+        "start": 166,
+        "end": 174,
+        "label": "TIME",
+        "text": "2200"
+      },
+      {
+        "start": 178,
+        "end": 186,
+        "label": "TIME",
+        "text": "0600"
+      },
+      {
+        "start": 34,
+        "end": 44,
+        "label": "TIME",
+        "text": "00.01.2024"
+      },
+      {
+        "start": 82,
+        "end": 92,
+        "label": "TIME",
+        "text": "00.01.2024"
+      }
+    ],
+    "event_type": "departure",
+    "pattern": "vessel sailed",
+    "source_file": "(25) SOF (ST-CERGUE).pdf"
+  },
+  {
+    "text": "Vessel / owners are not responsible for any shore delays /   \n    Congestion  /weather delay/ pre -berthing delay including other vessel pre -occupied of berths.",
+    "entities": [],
+    "event_type": "weather",
+    "pattern": "weather delay",
+    "source_file": "(25) SOF (ST-CERGUE).pdf"
+  },
+  {
+    "text": "Vessel provided five hatches, along with its al l gears to shippers/stevedores at all  times for cargo loading.",
+    "entities": [
+      {
+        "start": 82,
+        "end": 110,
+        "label": "LOCATION",
+        "text": "all  times for cargo loading"
+      }
+    ],
+    "event_type": "loading",
+    "pattern": "cargo loading",
+    "source_file": "(25) SOF (ST-CERGUE).pdf"
+  },
+  {
+    "text": "No.06 i\nPORT: TOWNSVILLE/ AUSTRALIA\nDATE: Ol-FEB-2024\nTO: ALL CONCERNED PARTIES\nDEAR SIRS,\nTHIS IS TO NOTIFY THAT M.V POAVOSA ACE ARRIVALED AND ANCHORED AT\nTOWNSVILLE ANCHORAGE N0.7, AT 0712LT ON 01 FEB 2024(2112UTC/31/JAN/2024)\nAND SHE IS READY IN ALL RESPECTS AND FIT TO LOAD HER CARGO IN ACCORDANCE\nWITH THE TERMS AND CONDITION OF THE CHARTER PARTY.",
+    "entities": [
+      {
+        "start": 156,
+        "end": 176,
+        "label": "LOCATION",
+        "text": "TOWNSVILLE ANCHORAGE"
+      },
+      {
+        "start": 249,
+        "end": 351,
+        "label": "LOCATION",
+        "text": "ALL RESPECTS AND FIT TO LOAD HER CARGO IN ACCORDANCE\nWITH THE TERMS AND CONDITION OF THE CHARTER PARTY"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "anchored",
+    "source_file": "(29) MV POAVOSA ACE (Hiti SOF).pdf"
+  },
+  {
+    "text": "NOTICE OF READINESS\nM.V. PQAVOSA ACE / Voy No.061\nPORT: TOWNSVILLE/ AUSTRALIA\nDATE: 04-FEB-2024\nTO: ALL CONCERNED PARTIES\nDEAR SIRS,\nTHIS IS TO NOTIFY THAT M.V POAVOSA ACE ARRIVED AND BERTHED AT\nPORT of TOVYNSVILLE, AT 1512LT ON 04 FEB 2024(0512UTC/04/FEB/2024) AND SHE\nIS READY IN ALL RESPECTS AND FIT TO LOAD HER CARGO IN ACCORDANCE VYITH THE\nTERMS AND CONDITION OF THE CHARTER PARTY.",
+    "entities": [
+      {
+        "start": 195,
+        "end": 214,
+        "label": "LOCATION",
+        "text": "PORT of TOVYNSVILLE"
+      },
+      {
+        "start": 282,
+        "end": 385,
+        "label": "LOCATION",
+        "text": "ALL RESPECTS AND FIT TO LOAD HER CARGO IN ACCORDANCE VYITH THE\nTERMS AND CONDITION OF THE CHARTER PARTY"
+      },
+      {
+        "start": 203,
+        "end": 214,
+        "label": "LOCATION",
+        "text": "TOVYNSVILLE"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "arrived",
+    "source_file": "(29) MV POAVOSA ACE (Hiti SOF).pdf"
+  },
+  {
+    "text": "NOTICE OF READINESS\nM.V. PQAVOSA ACE / Voy No.061\nPORT: TOWNSVILLE/ AUSTRALIA\nDATE: 04-FEB-2024\nTO: ALL CONCERNED PARTIES\nDEAR SIRS,\nTHIS IS TO NOTIFY THAT M.V POAVOSA ACE ARRIVED AND BERTHED AT\nPORT of TOVYNSVILLE, AT 1512LT ON 04 FEB 2024(0512UTC/04/FEB/2024) AND SHE\nIS READY IN ALL RESPECTS AND FIT TO LOAD HER CARGO IN ACCORDANCE VYITH THE\nTERMS AND CONDITION OF THE CHARTER PARTY.",
+    "entities": [
+      {
+        "start": 195,
+        "end": 214,
+        "label": "LOCATION",
+        "text": "PORT of TOVYNSVILLE"
+      },
+      {
+        "start": 282,
+        "end": 385,
+        "label": "LOCATION",
+        "text": "ALL RESPECTS AND FIT TO LOAD HER CARGO IN ACCORDANCE VYITH THE\nTERMS AND CONDITION OF THE CHARTER PARTY"
+      },
+      {
+        "start": 203,
+        "end": 214,
+        "label": "LOCATION",
+        "text": "TOVYNSVILLE"
+      }
+    ],
+    "event_type": "berthing",
+    "pattern": "berthed",
+    "source_file": "(29) MV POAVOSA ACE (Hiti SOF).pdf"
+  },
+  {
+    "text": "LTD.PORT: TOWNSVILLE\nGT: 17027\nNT: 10108\nCHARTERER: BALLANCE AGRI-NUTRIENTS\nLIMITED\nRADIO PRATIQUE GRANTED: 2323 hours 28TH JANUARY 2024\nARRIVED TOWNSVILLE: 0712 hours 1ST FEBRUARY 2024\nWEIGHED ANCHOR: 1254 hours 4TH FEBRUARY 2024\nPILOT ON BOARD: 1348 hours 4TH FEBRUARY 2024\nFIRST LINE ASHORE: 1500 hours 4TH FEBRUARY 2024\nALL FAST: BERTH 10 1512 hours 4TH FEBRUARY 2024\nN.O.R. TENDERED: 0712 hours 1ST FEBRUARY 2024\nN.O.R ACCEPTED:",
+    "entities": [],
+    "event_type": "arrival",
+    "pattern": "arrived",
+    "source_file": "(29) MV POAVOSA ACE (Hiti SOF).pdf"
+  },
+  {
+    "text": "LTD.PORT: TOWNSVILLE\nGT: 17027\nNT: 10108\nCHARTERER: BALLANCE AGRI-NUTRIENTS\nLIMITED\nRADIO PRATIQUE GRANTED: 2323 hours 28TH JANUARY 2024\nARRIVED TOWNSVILLE: 0712 hours 1ST FEBRUARY 2024\nWEIGHED ANCHOR: 1254 hours 4TH FEBRUARY 2024\nPILOT ON BOARD: 1348 hours 4TH FEBRUARY 2024\nFIRST LINE ASHORE: 1500 hours 4TH FEBRUARY 2024\nALL FAST: BERTH 10 1512 hours 4TH FEBRUARY 2024\nN.O.R. TENDERED: 0712 hours 1ST FEBRUARY 2024\nN.O.R ACCEPTED:",
+    "entities": [],
+    "event_type": "departure",
+    "pattern": "weighed anchor",
+    "source_file": "(29) MV POAVOSA ACE (Hiti SOF).pdf"
+  },
+  {
+    "text": "LTD.PORT: TOWNSVILLE\nGT: 17027\nNT: 10108\nCHARTERER: BALLANCE AGRI-NUTRIENTS\nLIMITED\nRADIO PRATIQUE GRANTED: 2323 hours 28TH JANUARY 2024\nARRIVED TOWNSVILLE: 0712 hours 1ST FEBRUARY 2024\nWEIGHED ANCHOR: 1254 hours 4TH FEBRUARY 2024\nPILOT ON BOARD: 1348 hours 4TH FEBRUARY 2024\nFIRST LINE ASHORE: 1500 hours 4TH FEBRUARY 2024\nALL FAST: BERTH 10 1512 hours 4TH FEBRUARY 2024\nN.O.R. TENDERED: 0712 hours 1ST FEBRUARY 2024\nN.O.R ACCEPTED:",
+    "entities": [],
+    "event_type": "pilot",
+    "pattern": "pilot on board",
+    "source_file": "(29) MV POAVOSA ACE (Hiti SOF).pdf"
+  },
+  {
+    "text": "AS PER RELEVANT CHARTER PARTY\nPASSED HOLD SURVEY: 1630 hours 4TH FEBRUARY 2024\nLOADING COMMENCED; 1930 hours 4TH FEBRUARY 2024\nLOADING COMPLETED: 0955 hours 6TH FEBRUARY 2024\nSAILED TOWNSVILLE: 1200 hours 6TH FEBRUARY 2024\nARRIVAL BUNKERS: FUEL OIL 851.9MT DIESEL 50.07MT WATER 200MT\nSAILING BUNKERS:",
+    "entities": [],
+    "event_type": "departure",
+    "pattern": "sailed",
+    "source_file": "(29) MV POAVOSA ACE (Hiti SOF).pdf"
+  },
+  {
+    "text": "AS PER RELEVANT CHARTER PARTY\nPASSED HOLD SURVEY: 1630 hours 4TH FEBRUARY 2024\nLOADING COMMENCED; 1930 hours 4TH FEBRUARY 2024\nLOADING COMPLETED: 0955 hours 6TH FEBRUARY 2024\nSAILED TOWNSVILLE: 1200 hours 6TH FEBRUARY 2024\nARRIVAL BUNKERS: FUEL OIL 851.9MT DIESEL 50.07MT WATER 200MT\nSAILING BUNKERS:",
+    "entities": [],
+    "event_type": "loading",
+    "pattern": "loading commenced",
+    "source_file": "(29) MV POAVOSA ACE (Hiti SOF).pdf"
+  },
+  {
+    "text": "FW:  \nRECORDS OF WORKING  \nPAARTICULAR  HOURS  DATE  \nVESSEL ARRIVED",
+    "entities": [],
+    "event_type": "arrival",
+    "pattern": "vessel arrived",
+    "source_file": "(6) MV BESK NAZIK SOF.pdf"
+  },
+  {
+    "text": "27.02.202 4 \nCOMPLETED LOADING   29.02.2024  \nFINAL DRAFT SURVEY COMME NCED   29.02.2024  \nFINAL DRAFT SURVEY COMPLETED   29.02.2024  \nDOCUMENTS COMPLETED   29.02.2024  \nPOB BOARDED THE VESSEL FOR SA ILING   29.02.2024  \nCAST OFF   29.02.2024  \nPILOT DISEMBARKED   29.02.2024",
+    "entities": [
+      {
+        "start": 33,
+        "end": 43,
+        "label": "TIME",
+        "text": "29.02.2024"
+      },
+      {
+        "start": 78,
+        "end": 88,
+        "label": "TIME",
+        "text": "29.02.2024"
+      },
+      {
+        "start": 122,
+        "end": 132,
+        "label": "TIME",
+        "text": "29.02.2024"
+      },
+      {
+        "start": 157,
+        "end": 167,
+        "label": "TIME",
+        "text": "29.02.2024"
+      },
+      {
+        "start": 208,
+        "end": 218,
+        "label": "TIME",
+        "text": "29.02.2024"
+      },
+      {
+        "start": 232,
+        "end": 242,
+        "label": "TIME",
+        "text": "29.02.2024"
+      },
+      {
+        "start": 265,
+        "end": 275,
+        "label": "TIME",
+        "text": "29.02.2024"
+      }
+    ],
+    "event_type": "pilot",
+    "pattern": "pilot disembarked",
+    "source_file": "(6) MV BESK NAZIK SOF.pdf"
+  },
+  {
+    "text": "VESSEL SAILED   29.02.2024  \n \n       \nPage 2 of 4 \n SUNDAYS, SATURDAYS, C.P /  LOCAL HOLIDAYS  \nSATURDA Y(S) SUNDAY(S)  C.P/",
+    "entities": [
+      {
+        "start": 16,
+        "end": 26,
+        "label": "TIME",
+        "text": "29.02.2024"
+      }
+    ],
+    "event_type": "departure",
+    "pattern": "vessel sailed",
+    "source_file": "(6) MV BESK NAZIK SOF.pdf"
+  },
+  {
+    "text": "Upon completion of cargo loading the co -joined final draft survey was carried out amongst all the nominated surveyors \nand the chief officer of the vessel.",
+    "entities": [],
+    "event_type": "loading",
+    "pattern": "cargo loading",
+    "source_file": "(6) MV BESK NAZIK SOF.pdf"
+  },
+  {
+    "text": "I Depth \nName of the Master \nName of Consignee \nDescription and quantity of cargo \nPort of Loading \nPort of Discharge \nNOR Tendered \nNOR Accepted \nDischarging rate \nVessel arrived at Kutubdia (OPL)",
+    "entities": [
+      {
+        "start": 183,
+        "end": 191,
+        "label": "LOCATION",
+        "text": "Kutubdia"
+      },
+      {
+        "start": 91,
+        "end": 191,
+        "label": "LOCATION",
+        "text": "Loading \nPort of Discharge \nNOR Tendered \nNOR Accepted \nDischarging rate \nVessel arrived at Kutubdia"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "vessel arrived",
+    "source_file": "(8) MV GH Danzero.pdf"
+  },
+  {
+    "text": "Vessel arrived at OIA \nDischarging Commenced at Kutubdia (OPL)",
+    "entities": [
+      {
+        "start": 18,
+        "end": 56,
+        "label": "LOCATION",
+        "text": "OIA \nDischarging Commenced at Kutubdia"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "vessel arrived",
+    "source_file": "(8) MV GH Danzero.pdf"
+  },
+  {
+    "text": "Vessel arrived at OIA \nDischarging Commenced at Kutubdia (OPL)",
+    "entities": [
+      {
+        "start": 18,
+        "end": 56,
+        "label": "LOCATION",
+        "text": "OIA \nDischarging Commenced at Kutubdia"
+      }
+    ],
+    "event_type": "discharging",
+    "pattern": "discharging commenced",
+    "source_file": "(8) MV GH Danzero.pdf"
+  },
+  {
+    "text": "Discharging Commenced at OIA \nDisc0arging Completed at 0/A \nDischarging Commenced at Main jetty",
+    "entities": [
+      {
+        "start": 25,
+        "end": 34,
+        "label": "LOCATION",
+        "text": "OIA \nDisc"
+      },
+      {
+        "start": 85,
+        "end": 95,
+        "label": "LOCATION",
+        "text": "Main jetty"
+      },
+      {
+        "start": 90,
+        "end": 95,
+        "label": "LOCATION",
+        "text": "jetty"
+      }
+    ],
+    "event_type": "discharging",
+    "pattern": "discharging commenced",
+    "source_file": "(8) MV GH Danzero.pdf"
+  },
+  {
+    "text": "DISCHARGING COMMENCED AND CONTINUED \n03-FEB-2018 SAT 0000 1335 DISCHARGING OPERATION CONTINUED \nWEEKLY HOLIDAY \n1335 1850",
+    "entities": [],
+    "event_type": "discharging",
+    "pattern": "discharging commenced",
+    "source_file": "(8) MV GH Danzero.pdf"
+  },
+  {
+    "text": "HRS 09.11.2023 \nVESSEL DROPPED ANCHORED  AT SAGAR ROAD      : 0710",
+    "entities": [
+      {
+        "start": 4,
+        "end": 14,
+        "label": "TIME",
+        "text": "09.11.2023"
+      },
+      {
+        "start": 44,
+        "end": 54,
+        "label": "LOCATION",
+        "text": "SAGAR ROAD"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "dropped anchor",
+    "source_file": "(9) MV CLIPPER COPENHAGEN  - DRAFT SOF.pdf"
+  },
+  {
+    "text": "HRS 12.11.2023 \nPILOT BOARDED",
+    "entities": [
+      {
+        "start": 4,
+        "end": 14,
+        "label": "TIME",
+        "text": "12.11.2023"
+      }
+    ],
+    "event_type": "pilot",
+    "pattern": "pilot boarded",
+    "source_file": "(9) MV CLIPPER COPENHAGEN  - DRAFT SOF.pdf"
+  },
+  {
+    "text": "0750 HRS 12.11.2023 \nVESSEL DROPPED  ANCHORED AT DIAMOND HA RBOUR      : 1206 HRS 12.11.2023 \nDISCHARGE RESUMED",
+    "entities": [
+      {
+        "start": 9,
+        "end": 19,
+        "label": "TIME",
+        "text": "12.11.2023"
+      },
+      {
+        "start": 82,
+        "end": 92,
+        "label": "TIME",
+        "text": "12.11.2023"
+      },
+      {
+        "start": 49,
+        "end": 65,
+        "label": "LOCATION",
+        "text": "DIAMOND HA RBOUR"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "anchored",
+    "source_file": "(9) MV CLIPPER COPENHAGEN  - DRAFT SOF.pdf"
+  },
+  {
+    "text": "HRS 14.11.2023 \nDOCUMENTATION COM PLETED                         :     1540 HRS 14.11.2023 \nVESSEL READY FOR SAIL                           :     1540 HRS 14.11.2023 \nVESSEL SAILED                                   :",
+    "entities": [
+      {
+        "start": 4,
+        "end": 14,
+        "label": "TIME",
+        "text": "14.11.2023"
+      },
+      {
+        "start": 80,
+        "end": 90,
+        "label": "TIME",
+        "text": "14.11.2023"
+      },
+      {
+        "start": 155,
+        "end": 165,
+        "label": "TIME",
+        "text": "14.11.2023"
+      }
+    ],
+    "event_type": "departure",
+    "pattern": "vessel sailed",
+    "source_file": "(9) MV CLIPPER COPENHAGEN  - DRAFT SOF.pdf"
+  },
+  {
+    "text": "Alongside the ves sel : 1930 hrs ; \n09.11.2023 / Loading Commenced : 2035 hrs ; 09.11.2023 / Loading \nCompleted : 1330 hrs ; 09.11.2023  \n2.",
+    "entities": [
+      {
+        "start": 24,
+        "end": 32,
+        "label": "TIME",
+        "text": "1930"
+      },
+      {
+        "start": 69,
+        "end": 77,
+        "label": "TIME",
+        "text": "2035"
+      },
+      {
+        "start": 114,
+        "end": 122,
+        "label": "TIME",
+        "text": "1330"
+      },
+      {
+        "start": 36,
+        "end": 46,
+        "label": "TIME",
+        "text": "09.11.2023"
+      },
+      {
+        "start": 80,
+        "end": 90,
+        "label": "TIME",
+        "text": "09.11.2023"
+      },
+      {
+        "start": 125,
+        "end": 135,
+        "label": "TIME",
+        "text": "09.11.2023"
+      }
+    ],
+    "event_type": "berthing",
+    "pattern": "alongside",
+    "source_file": "(9) MV CLIPPER COPENHAGEN  - DRAFT SOF.pdf"
+  },
+  {
+    "text": "Alongside the ves sel : 1930 hrs ; \n09.11.2023 / Loading Commenced : 2035 hrs ; 09.11.2023 / Loading \nCompleted : 1330 hrs ; 09.11.2023  \n2.",
+    "entities": [
+      {
+        "start": 24,
+        "end": 32,
+        "label": "TIME",
+        "text": "1930"
+      },
+      {
+        "start": 69,
+        "end": 77,
+        "label": "TIME",
+        "text": "2035"
+      },
+      {
+        "start": 114,
+        "end": 122,
+        "label": "TIME",
+        "text": "1330"
+      },
+      {
+        "start": 36,
+        "end": 46,
+        "label": "TIME",
+        "text": "09.11.2023"
+      },
+      {
+        "start": 80,
+        "end": 90,
+        "label": "TIME",
+        "text": "09.11.2023"
+      },
+      {
+        "start": 125,
+        "end": 135,
+        "label": "TIME",
+        "text": "09.11.2023"
+      }
+    ],
+    "event_type": "loading",
+    "pattern": "loading commenced",
+    "source_file": "(9) MV CLIPPER COPENHAGEN  - DRAFT SOF.pdf"
+  },
+  {
+    "text": "Loading Commenced : 2115 hrs ;",
+    "entities": [
+      {
+        "start": 20,
+        "end": 28,
+        "label": "TIME",
+        "text": "2115"
+      }
+    ],
+    "event_type": "loading",
+    "pattern": "loading commenced",
+    "source_file": "(9) MV CLIPPER COPENHAGEN  - DRAFT SOF.pdf"
+  },
+  {
+    "text": "Alongside the vessel : 15 30 hrs ; \n12.11.2023 /",
+    "entities": [
+      {
+        "start": 36,
+        "end": 46,
+        "label": "TIME",
+        "text": "12.11.2023"
+      }
+    ],
+    "event_type": "berthing",
+    "pattern": "alongside",
+    "source_file": "(9) MV CLIPPER COPENHAGEN  - DRAFT SOF.pdf"
+  },
+  {
+    "text": "Loading Commenced : 1 420 hrs ; 12.11.2023 /  Loading \nCompleted  0840 hrs; 1 3.11.2023  \n4.",
+    "entities": [
+      {
+        "start": 66,
+        "end": 74,
+        "label": "TIME",
+        "text": "0840"
+      },
+      {
+        "start": 32,
+        "end": 42,
+        "label": "TIME",
+        "text": "12.11.2023"
+      },
+      {
+        "start": 78,
+        "end": 87,
+        "label": "TIME",
+        "text": "3.11.2023"
+      }
+    ],
+    "event_type": "loading",
+    "pattern": "loading commenced",
+    "source_file": "(9) MV CLIPPER COPENHAGEN  - DRAFT SOF.pdf"
+  },
+  {
+    "text": "Alongside the vessel : 1145 hrs ; \n13.11.2023 / Loading Com menced : 1155 hrs ; 13.11.2023 / Loading \nCompleted  \n \n \nCONTD …… .P/3 \n \n \n \n \n \n \n \n \n \n \n \n-:: 3 ::- \n \n \nRECEIVER’S / RECEIVERS HANDLING AGENT ’S REMARKS :- \n \n1.",
+    "entities": [
+      {
+        "start": 23,
+        "end": 31,
+        "label": "TIME",
+        "text": "1145"
+      },
+      {
+        "start": 69,
+        "end": 77,
+        "label": "TIME",
+        "text": "1155"
+      },
+      {
+        "start": 35,
+        "end": 45,
+        "label": "TIME",
+        "text": "13.11.2023"
+      },
+      {
+        "start": 80,
+        "end": 90,
+        "label": "TIME",
+        "text": "13.11.2023"
+      }
+    ],
+    "event_type": "berthing",
+    "pattern": "alongside",
+    "source_file": "(9) MV CLIPPER COPENHAGEN  - DRAFT SOF.pdf"
+  },
+  {
+    "text": "VESSEL M.V. CLIPPER COPENGAHEN  ARRIVED KOLKATA",
+    "entities": [],
+    "event_type": "arrival",
+    "pattern": "arrived",
+    "source_file": "(9) MV CLIPPER COPENHAGEN  - DRAFT SOF.pdf"
+  },
+  {
+    "text": "VESSEL ARRIVED AT 0200 HRS ON 04.11.2023 & NOTICE OF READI NESS TENDERED AT 0200",
+    "entities": [
+      {
+        "start": 30,
+        "end": 40,
+        "label": "TIME",
+        "text": "04.11.2023"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "vessel arrived",
+    "source_file": "(9) MV CLIPPER COPENHAGEN  - DRAFT SOF.pdf"
+  },
+  {
+    "text": "13/08/2020 Ha 1 dari t hal\n@\nCompleted Final Draft Survey\nShips document Arrived on Board\nCompleled Cargo's Documenl\nAnchorAweigh\nSailed / Departure Time\nEta Next PodNafie of Vessel\nFlag / DWT\nMaste/s Name\nPort of Loaded\nPort of Discharging\nCargo Description\nQuantity loaded as per B/L\nArived at Adang Bay\nNotice of Readiness Tendered\nDropped anchorage\nFree Pratique Granted\nPilot On Board\nPiJot off\nNotice of Readiness Accepted\nlnnitial Draft's Survey\nHold Cleaniiness lnspeciton\nCorarnencemenl of loading\nCompleted of loading?\"<- =4r4d. hitzo.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "label": "TIME",
+        "text": "13/08/2020"
+      },
+      {
+        "start": 296,
+        "end": 443,
+        "label": "LOCATION",
+        "text": "Adang Bay\nNotice of Readiness Tendered\nDropped anchorage\nFree Pratique Granted\nPilot On Board\nPiJot off\nNotice of Readiness Accepted\nlnnitial Draft"
+      },
+      {
+        "start": 214,
+        "end": 281,
+        "label": "LOCATION",
+        "text": "Loaded\nPort of Discharging\nCargo Description\nQuantity loaded as per"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "arrived",
+    "source_file": "mv.vosco sky = copy cargo loaded document.pdf"
+  },
+  {
+    "text": "13/08/2020 Ha 1 dari t hal\n@\nCompleted Final Draft Survey\nShips document Arrived on Board\nCompleled Cargo's Documenl\nAnchorAweigh\nSailed / Departure Time\nEta Next PodNafie of Vessel\nFlag / DWT\nMaste/s Name\nPort of Loaded\nPort of Discharging\nCargo Description\nQuantity loaded as per B/L\nArived at Adang Bay\nNotice of Readiness Tendered\nDropped anchorage\nFree Pratique Granted\nPilot On Board\nPiJot off\nNotice of Readiness Accepted\nlnnitial Draft's Survey\nHold Cleaniiness lnspeciton\nCorarnencemenl of loading\nCompleted of loading?\"<- =4r4d. hitzo.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "label": "TIME",
+        "text": "13/08/2020"
+      },
+      {
+        "start": 296,
+        "end": 443,
+        "label": "LOCATION",
+        "text": "Adang Bay\nNotice of Readiness Tendered\nDropped anchorage\nFree Pratique Granted\nPilot On Board\nPiJot off\nNotice of Readiness Accepted\nlnnitial Draft"
+      },
+      {
+        "start": 214,
+        "end": 281,
+        "label": "LOCATION",
+        "text": "Loaded\nPort of Discharging\nCargo Description\nQuantity loaded as per"
+      }
+    ],
+    "event_type": "departure",
+    "pattern": "sailed",
+    "source_file": "mv.vosco sky = copy cargo loaded document.pdf"
+  },
+  {
+    "text": "13/08/2020 Ha 1 dari t hal\n@\nCompleted Final Draft Survey\nShips document Arrived on Board\nCompleled Cargo's Documenl\nAnchorAweigh\nSailed / Departure Time\nEta Next PodNafie of Vessel\nFlag / DWT\nMaste/s Name\nPort of Loaded\nPort of Discharging\nCargo Description\nQuantity loaded as per B/L\nArived at Adang Bay\nNotice of Readiness Tendered\nDropped anchorage\nFree Pratique Granted\nPilot On Board\nPiJot off\nNotice of Readiness Accepted\nlnnitial Draft's Survey\nHold Cleaniiness lnspeciton\nCorarnencemenl of loading\nCompleted of loading?\"<- =4r4d. hitzo.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "label": "TIME",
+        "text": "13/08/2020"
+      },
+      {
+        "start": 296,
+        "end": 443,
+        "label": "LOCATION",
+        "text": "Adang Bay\nNotice of Readiness Tendered\nDropped anchorage\nFree Pratique Granted\nPilot On Board\nPiJot off\nNotice of Readiness Accepted\nlnnitial Draft"
+      },
+      {
+        "start": 214,
+        "end": 281,
+        "label": "LOCATION",
+        "text": "Loaded\nPort of Discharging\nCargo Description\nQuantity loaded as per"
+      }
+    ],
+    "event_type": "pilot",
+    "pattern": "pilot on board",
+    "source_file": "mv.vosco sky = copy cargo loaded document.pdf"
+  },
+  {
+    "text": "-4EL00.30\n00 30\n01 15\n01.15-24\n13.00\n13 30\n13.45\n00 00-24\n00-24.000c\n00\n00\n00.00,24.00\n00.00 24.00\n05.00\n06.00\n06.30\na7 _20\na7 _24 12 5D\n07.25\n08.00-09.00\n10.50\n12-AO\n12 0A\n12_34 12 5A\n12 50\n13.10\n15.30\n16 30-20.00\n20.00\n24_OA11235tc,t23t\nH3/C3\nH3/C3\n11235tC123,\n112351C1232\n112351C',t232Arivaltime ai adang bay piioi siation\nNotice of readiness iendered\nDropped anchor at v/aliing area",
+    "entities": [],
+    "event_type": "arrival",
+    "pattern": "dropped anchor",
+    "source_file": "mv.vosco sky = copy cargo loaded document.pdf"
+  },
+  {
+    "text": "No loading activiiy due to waiting shipper insiruction for shiiiing to area toading point\nOuarantine on board vessel\nFree pratique granted by quaran|ne\nQuaranline disembarked\nSlill no loading aclivliy due 10 waifng shipper instruclion for shiiling io area toading\nStill no loading activiiy due to waiiing shipper irrsiruciion for shiitng to area toading\nSlill no ioading aciivity due to waiting shipper instruclion for shif.ting to area toadiog\nStillno loading aciivlty dueto waiting shipper instruciion tor shifiing to area toadtng\nStevedores on board vessel\nPiloi on board for shilling to area loading point\nDropped anchor al area loadiog poini\nNo load{ng activily due io v.,aiting shipper insirllclion\nlnilial d.afi suNey & Hold cleanliness inspeciion\nICT Cipta Jaya lvakmur alongside at poll side\nEg.",
+    "entities": [
+      {
+        "start": 791,
+        "end": 803,
+        "label": "LOCATION",
+        "text": "poll side\nEg"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "dropped anchor",
+    "source_file": "mv.vosco sky = copy cargo loaded document.pdf"
+  },
+  {
+    "text": "No loading activiiy due to waiting shipper insiruction for shiiiing to area toading point\nOuarantine on board vessel\nFree pratique granted by quaran|ne\nQuaranline disembarked\nSlill no loading aclivliy due 10 waifng shipper instruclion for shiiling io area toading\nStill no loading activiiy due to waiiing shipper irrsiruciion for shiitng to area toading\nSlill no ioading aciivity due to waiting shipper instruclion for shif.ting to area toadiog\nStillno loading aciivlty dueto waiting shipper instruciion tor shifiing to area toadtng\nStevedores on board vessel\nPiloi on board for shilling to area loading point\nDropped anchor al area loadiog poini\nNo load{ng activily due io v.,aiting shipper insirllclion\nlnilial d.afi suNey & Hold cleanliness inspeciion\nICT Cipta Jaya lvakmur alongside at poll side\nEg.",
+    "entities": [
+      {
+        "start": 791,
+        "end": 803,
+        "label": "LOCATION",
+        "text": "poll side\nEg"
+      }
+    ],
+    "event_type": "berthing",
+    "pattern": "alongside",
+    "source_file": "mv.vosco sky = copy cargo loaded document.pdf"
+  },
+  {
+    "text": "21_21\n21_30\n21.55\n22.15\n22_25\n08.00\n10.30\n'10.30\n12.50\n13.30\n13.3010.0G1\n17 00-1\n19.30-2\nOlh ApriH125rc124\nc3\nH3/C3\nH123rc123\nH23tC12\nH4lC3235tC1\nH1245tCl\n1245tC1\n1234tC1\nH1234tC1H125tC124\nH4lC3\n1245tC1\n1245tC1\nH125tC124\nH4tC3\nH135tC124\nC3\nH4tC3\nH124tC124\nc3\nH3/C3loading irom Bg.Finacia 91\ncontinued loading arom Bg.Anqeline 05Stopped loading dueio completed discharging cargo on Bg.Fi.acia 91\nResumed loading from Bg.Sbs Prosperity I\nTransfened dozer frcm Bg.Finacia 91 to Bg-Sbs Prospe.ily I by crane 3\nResumed loading from Bg.Sbs Prosperity I\nSlopped loading from Bg-Sbs Prosperity I\nR6umed loading from Bg.Sbs Prosperity I\nStarled loading trom Bg.Sbs Prosperity I\nBg.Angeline 05 alongside ai Stbd side assisted by Tb-S.Segara 2 & Tb.Pesut ll\nSiopped loading due to compieted discharging caQo on Bg-Sbs Prosperily I\nResumed loading from Bg.",
+    "entities": [],
+    "event_type": "berthing",
+    "pattern": "alongside",
+    "source_file": "mv.vosco sky = copy cargo loaded document.pdf"
+  },
+  {
+    "text": "I\nBg.Finacia 55 alongside at porl side assisted by Tb.Michelle 06 & Tb.E.Star30\nSlill continued loading lrom Bg.",
+    "entities": [
+      {
+        "start": 29,
+        "end": 53,
+        "label": "LOCATION",
+        "text": "porl side assisted by Tb"
+      }
+    ],
+    "event_type": "berthing",
+    "pattern": "alongside",
+    "source_file": "mv.vosco sky = copy cargo loaded document.pdf"
+  },
+  {
+    "text": "alongside at Stbd side assisted by Tb.Syukur33 & Tb.E-Star 58\nStopped loading due to completed discharging cargo on Bg-Finacia 55\nResumed loading from Bg.Baiduri 30385\nTransferred dozer from Bg.Finacia 55 to Bg.Baidui 30385 by crabe 3\nReermed loading from Bg.Baiduri 30385\nBg-F,nacia 55 casted off by Tb.M'chelle 06",
+    "entities": [
+      {
+        "start": 13,
+        "end": 37,
+        "label": "LOCATION",
+        "text": "Stbd side assisted by Tb"
+      }
+    ],
+    "event_type": "berthing",
+    "pattern": "alongside",
+    "source_file": "mv.vosco sky = copy cargo loaded document.pdf"
+  },
+  {
+    "text": "Siopped loading all crane due to heavy rain\nSiill no load;ng due to hea\\,y rain\nResumed loading t'om Bg.Baiduri 30385\nBg.Bahtera 3001 alongside at pori side assisied by Ttr.",
+    "entities": [
+      {
+        "start": 147,
+        "end": 172,
+        "label": "LOCATION",
+        "text": "pori side assisied by Ttr"
+      },
+      {
+        "start": 44,
+        "end": 57,
+        "label": "LOCATION",
+        "text": "Siill no load"
+      },
+      {
+        "start": 80,
+        "end": 95,
+        "label": "LOCATION",
+        "text": "Resumed loading"
+      }
+    ],
+    "event_type": "berthing",
+    "pattern": "alongside",
+    "source_file": "mv.vosco sky = copy cargo loaded document.pdf"
+  },
+  {
+    "text": "Syukw 33\nStopped loading doe to completed discharging xcargo on Bg.Baiduri30385\nResumed loading from Bg.Bahtera 3001\nTranslened dozer from Baiduri 30385 to Bg.Bahtera 3001 by crane 3\nResumed loading from Bg.Bahtera 3001\nBg.Baiduri30385 casted off by Tb-Syukur 33\nStopped loading due to lniermediate draft survey\nResumed loading from Bg.Bahtera 300'1\nCompleted of loading time\nFinal draft survey\nWaiting customs export document\n01si custom expo( docurnent (PEB) rcceived from Shipper\nPilol onboad for shiftino to waitnq area\nDropped anchor at waitng area\nPilor ofi\n02nd custom export documeni (NPE) received frcm Shipper\nOut creaEnce formalitiy prccessing at Port authoriiy\nOut clearance formalitiy processing compleied at Port authority\nShip paperand sailins permit deliverv on boad vessel\nShip paperand sailins pemit anived on board vessel\nCompleted ca.go document\nEta Naga Cebu, Philippine\nPT.",
+    "entities": [
+      {
+        "start": 542,
+        "end": 563,
+        "label": "LOCATION",
+        "text": "waitng area\nPilor ofi"
+      },
+      {
+        "start": 658,
+        "end": 853,
+        "label": "LOCATION",
+        "text": "Port authoriiy\nOut clearance formalitiy processing compleied at Port authority\nShip paperand sailins permit deliverv on boad vessel\nShip paperand sailins pemit anived on board vessel\nCompleted ca"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "dropped anchor",
+    "source_file": "mv.vosco sky = copy cargo loaded document.pdf"
+  },
+  {
+    "text": "Dear Sir,\nPlease be informed that the vessel M.V.Chennai Valarchi, under my command, has arrived\nBahodopi Pilot Meeting Point Position Latitude 02 46.065 S / Longitude 122 13.69 E at\n2130 hrs LT on 24 Jan 2024 (1330 GMT on 24 Jan 2024\\ and is ready in all respects to\nload her cargo of 51338 MT (LAM COKE + COKE BREEZE) or at Charterers / Shippers\nspecific request 48240 MT (ONLY LAMO COKE) in Bulk, in accordance with terms,\nconditions, provisions and exceptions of the governing Charter Party.",
+    "entities": [
+      {
+        "start": 183,
+        "end": 191,
+        "label": "TIME",
+        "text": "2130"
+      },
+      {
+        "start": 34,
+        "end": 44,
+        "label": "LOCATION",
+        "text": "the vessel"
+      },
+      {
+        "start": 326,
+        "end": 336,
+        "label": "LOCATION",
+        "text": "Charterers"
+      },
+      {
+        "start": 252,
+        "end": 285,
+        "label": "LOCATION",
+        "text": "all respects to\nload her cargo of"
+      },
+      {
+        "start": 394,
+        "end": 398,
+        "label": "LOCATION",
+        "text": "Bulk"
+      },
+      {
+        "start": 403,
+        "end": 424,
+        "label": "LOCATION",
+        "text": "accordance with terms"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "arrived",
+    "source_file": "R73960.pdf"
+  },
+  {
+    "text": "Dear Sir,\nPlease be informed that the vessel M.V.Chennai Valarchi, under my command, has arrived\nBahodopi Pilot Meeting Point Position Latitude 02 46.065 S / Longitude '122 13.69 E at\n0001 hrs LT on 25 Jan 2024 (1601 GMT on 24 Jan 2024) and is ready in all respects to\nload her cargo of 51338 MT (LAM COKE + COKE BREEZE) or at Charterers / Shippers\nspecific request 48240 MT (ONLY LAMO COKE) in Bulk, in accordance with terms,\nconditions, provisions and exceptions of the governing Charter Party.",
+    "entities": [
+      {
+        "start": 184,
+        "end": 192,
+        "label": "TIME",
+        "text": "0001"
+      },
+      {
+        "start": 34,
+        "end": 44,
+        "label": "LOCATION",
+        "text": "the vessel"
+      },
+      {
+        "start": 327,
+        "end": 337,
+        "label": "LOCATION",
+        "text": "Charterers"
+      },
+      {
+        "start": 253,
+        "end": 286,
+        "label": "LOCATION",
+        "text": "all respects to\nload her cargo of"
+      },
+      {
+        "start": 395,
+        "end": 399,
+        "label": "LOCATION",
+        "text": "Bulk"
+      },
+      {
+        "start": 404,
+        "end": 425,
+        "label": "LOCATION",
+        "text": "accordance with terms"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "arrived",
+    "source_file": "R73960.pdf"
+  },
+  {
+    "text": "Vessel provided all hatches to stevedores at all times for cargo loading from commencement till\ncompletion without any downtime whatsoever.",
+    "entities": [
+      {
+        "start": 45,
+        "end": 138,
+        "label": "LOCATION",
+        "text": "all times for cargo loading from commencement till\ncompletion without any downtime whatsoever"
+      }
+    ],
+    "event_type": "loading",
+    "pattern": "cargo loading",
+    "source_file": "R73960.pdf"
+  },
+  {
+    "text": "Weather condition during entire vessels stay was fine for cargo work and vessel does not accept any\nweather delays whatsoever except the one specifically recorded as under:",
+    "entities": [],
+    "event_type": "weather",
+    "pattern": "weather delay",
+    "source_file": "R73960.pdf"
+  },
+  {
+    "text": "I Depth \nName of the Master \nName of Consignee \nDescription and quantity of cargo \nPort of Loading \nPort of Discharge \nNOR Tendered \nNOR Accepted \nDischarging rate \nVessel arrived at Kutubdia (OPL)",
+    "entities": [
+      {
+        "start": 183,
+        "end": 191,
+        "label": "LOCATION",
+        "text": "Kutubdia"
+      },
+      {
+        "start": 91,
+        "end": 191,
+        "label": "LOCATION",
+        "text": "Loading \nPort of Discharge \nNOR Tendered \nNOR Accepted \nDischarging rate \nVessel arrived at Kutubdia"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "vessel arrived",
+    "source_file": "SOF N36P83.pdf"
+  },
+  {
+    "text": "Vessel arrived at OIA \nDischarging Commenced at Kutubdia (OPL)",
+    "entities": [
+      {
+        "start": 18,
+        "end": 56,
+        "label": "LOCATION",
+        "text": "OIA \nDischarging Commenced at Kutubdia"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "vessel arrived",
+    "source_file": "SOF N36P83.pdf"
+  },
+  {
+    "text": "Vessel arrived at OIA \nDischarging Commenced at Kutubdia (OPL)",
+    "entities": [
+      {
+        "start": 18,
+        "end": 56,
+        "label": "LOCATION",
+        "text": "OIA \nDischarging Commenced at Kutubdia"
+      }
+    ],
+    "event_type": "discharging",
+    "pattern": "discharging commenced",
+    "source_file": "SOF N36P83.pdf"
+  },
+  {
+    "text": "Discharging Commenced at OIA \nDisc0arging Completed at 0/A \nDischarging Commenced at Main jetty",
+    "entities": [
+      {
+        "start": 25,
+        "end": 34,
+        "label": "LOCATION",
+        "text": "OIA \nDisc"
+      },
+      {
+        "start": 85,
+        "end": 95,
+        "label": "LOCATION",
+        "text": "Main jetty"
+      },
+      {
+        "start": 90,
+        "end": 95,
+        "label": "LOCATION",
+        "text": "jetty"
+      }
+    ],
+    "event_type": "discharging",
+    "pattern": "discharging commenced",
+    "source_file": "SOF N36P83.pdf"
+  },
+  {
+    "text": "DISCHARGING COMMENCED AND CONTINUED \n03-FEB-2018 SAT 0000 1335 DISCHARGING OPERATION CONTINUED \nWEEKLY HOLIDAY \n1335 1850",
+    "entities": [],
+    "event_type": "discharging",
+    "pattern": "discharging commenced",
+    "source_file": "SOF N36P83.pdf"
+  },
+  {
+    "text": "INDONESIA\ndppTr/trn Dil nT cT.1Ttn\\( 1lth 0ctober 2019 05.00 HRS\nNOTICE OF READINESS TENDERED 1lth October 2019 05.00 HRS\nDROPPED ANCHOR llth OctoLer 2019 05.",
+    "entities": [],
+    "event_type": "arrival",
+    "pattern": "dropped anchor",
+    "source_file": "SOF- Asteris.pdf"
+  },
+  {
+    "text": "50 HRS\nNOR RETENDERED\nPILOT ON BOARD llth 0ctober 2A19 05.00 HRS\nF'IRST",
+    "entities": [],
+    "event_type": "pilot",
+    "pattern": "pilot on board",
+    "source_file": "SOF- Asteris.pdf"
+  },
+  {
+    "text": "October 2019 16:00 HRS\nCOMMENCE F'INAL DRAFT SURVEY i4th 0ctober 2019 16.00 HRS\nI\nCOMPLETED F'INAL DRAFT SURVEY 14th 0ctober 2019 17.00 HRS\nCARG0 DOCI,'kIENTATI0N COMPLETED l4th 0ctober 2019 00.30 HRS\nPILOT ON BOARD F'OR SAILING 14th 0ctober 2019 HRS.",
+    "entities": [
+      {
+        "start": 13,
+        "end": 18,
+        "label": "TIME",
+        "text": "16:00"
+      }
+    ],
+    "event_type": "pilot",
+    "pattern": "pilot on board",
+    "source_file": "SOF- Asteris.pdf"
+  },
+  {
+    "text": "YESSEL SAILED 14th October 2A19 02.00 HRS\nETA NEXT PORT l8th",
+    "entities": [],
+    "event_type": "departure",
+    "pattern": "sailed",
+    "source_file": "SOF- Asteris.pdf"
+  },
+  {
+    "text": "ANCHORED AT ADANG BAY, INDONESIA,\noN 11TH OCTOBER 2019 / 0550 r-RS LT.\nON 11TH OCT. 2019",
+    "entities": [
+      {
+        "start": 12,
+        "end": 21,
+        "label": "LOCATION",
+        "text": "ADANG BAY"
+      }
+    ],
+    "event_type": "arrival",
+    "pattern": "anchored",
+    "source_file": "SOF- Asteris.pdf"
+  }
+]

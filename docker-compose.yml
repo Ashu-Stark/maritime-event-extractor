@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  maritime-extractor:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./uploads:/app/uploads
+      - ./instance:/app/instance
+    environment:
+      - FLASK_ENV=production
+      - DATABASE_URL=sqlite:///instance/sof_extractor.db
+    restart: unless-stopped
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - maritime-extractor
+    restart: unless-stopped

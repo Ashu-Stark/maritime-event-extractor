@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoF Event Extractor - Laytime Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        'xs': '475px',
+                    },
+                    animation: {
+                        'slide-up': 'slideUp 0.3s ease-out',
+                        'fade-in': 'fadeIn 0.2s ease-in',
+                        'pulse-slow': 'pulse 3s infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-shadow {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .upload-zone {
+            border: 2px dashed #cbd5e0;
+            transition: all 0.3s ease;
+            background-color: #fafbfc;
+        }
+        
+        .upload-zone.dragover {
+            border-color: #667eea;
+            background-color: #f0f4ff;
+            transform: scale(1.01);
+        }
+        
+        .processing-spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .event-row {
+            transition: all 0.2s ease;
+        }
+        
+        .event-row:hover {
+            background-color: #f8fafc;
+            transform: translateX(2px);
+        }
+        
+        .confidence-high { color: #10b981; }
+        .confidence-medium { color: #f59e0b; }
+        .confidence-low { color: #ef4444; }
+        
+        .tab-active {
+            background-color: #667eea;
+            color: white;
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+        }
+        
+        .maritime-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234f46e5' fill-opacity='0.02'%3E%3Ccircle cx='20' cy='20' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .typing-indicator {
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            background: #f3f4f6;
+            border-radius: 16px;
+            margin-bottom: 8px;
+            width: fit-content;
+        }
+
+        .typing-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #9ca3af;
+            margin: 0 1px;
+            animation: typing 1.4s infinite;
+        }
+
+        .typing-dot:nth-child(1) { animation-delay: 0s; }
+        .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+        @keyframes typing {
+            0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+            30% { transform: translateY(-4px); opacity: 1; }
+        }
+
+        .chat-input:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .suggestion-chip {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            transition: all 0.2s ease;
+            font-size: 0.75rem;
+        }
+
+        .suggestion-chip:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.25);
+        }
+
+        .ai-avatar {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .chat-container {
+            max-height: 400px;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: #cbd5e0 transparent;
+        }
+
+        .chat-container::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .chat-container::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .chat-container::-webkit-scrollbar-thumb {
+            background-color: #cbd5e0;
+            border-radius: 2px;
+        }
+
+        .chat-container::-webkit-scrollbar-thumb:hover {
+            background-color: #a0aec0;
+        }
+
+        /* Mobile optimizations */
+        @media (max-width: 640px) {
+            .chat-container {
+                max-height: 300px;
+            }
+            
+            .card-shadow {
+                box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            }
+            
+            .event-row:hover {
+                transform: none;
+            }
+            
+            .suggestion-chip {
+                font-size: 0.7rem;
+                padding: 0.25rem 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen maritime-pattern">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-4 sm:py-6 mb-4 sm:mb-8 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-3 sm:px-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2 sm:space-x-4">
+                    <div class="w-8 h-8 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-ship text-lg sm:text-2xl"></i>
+                    </div>
+                    <div class="min-w-0 flex-1">
+                        <h1 class="text-lg sm:text-2xl lg:text-3xl font-bold truncate">SoF Event Extractor</h1>
+                        <p class="text-xs sm:text-sm text-blue-100 hidden sm:block">Laytime Intelligence System</p>
+                    </div>
+                </div>
+                <div class="hidden lg:flex items-center space-x-4">
+                    <div class="text-right">
+                        <div class="text-sm opacity-80">Powered by</div>
+                        <div class="font-semibold">AI + Maritime Intelligence</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-3 sm:px-4 max-w-7xl">
+        <!-- Main Content -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+            <!-- Upload Section -->
+            <div class="lg:col-span-1">
+                <!-- Upload Card -->
+                <div id="uploadCard" class="bg-white rounded-xl card-shadow p-4 sm:p-6 mb-4 sm:mb-6">
+                    <h2 class="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4 flex items-center">
+                        <i class="fas fa-upload text-blue-600 mr-2"></i>
+                        <span class="truncate">Upload SoF Document</span>
+                    </h2>
+                    
+                    <!-- File Upload Zone -->
+                    <div id="uploadZone" class="upload-zone rounded-lg p-4 sm:p-8 text-center cursor-pointer mb-4 transition-all duration-300 hover:shadow-md">
+                        <i class="fas fa-cloud-upload-alt text-2xl sm:text-4xl text-gray-400 mb-2 sm:mb-4"></i>
+                        <p class="text-gray-600 mb-1 sm:mb-2 text-sm sm:text-base">Drag & drop your SoF document here</p>
+                        <p class="text-xs sm:text-sm text-gray-400">or click to browse</p>
+                        <p class="text-xs text-gray-400 mt-2">PDF, DOC, DOCX (Max: 10MB)</p>
+                        <input type="file" id="fileInput" accept=".pdf,.doc,.docx" class="hidden">
+                    </div>
+                    
+                    <!-- Processing Status -->
+                    <div id="processingStatus" class="hidden animate-fade-in">
+                        <div class="flex items-center justify-center p-3 sm:p-4">
+                            <div class="processing-spinner mr-3"></div>
+                            <span class="text-gray-600 text-sm sm:text-base">Processing document...</span>
+                        </div>
+                        <div class="bg-gray-100 rounded-lg p-3 mt-3">
+                            <div id="processingSteps" class="text-xs sm:text-sm text-gray-600 space-y-1">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Document uploaded successfully</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Document Info Card -->
+                <div id="documentInfo" class="bg-white rounded-xl card-shadow p-4 sm:p-6 mb-4 sm:mb-6 hidden animate-slide-up">
+                    <h3 class="text-base sm:text-lg font-semibold text-gray-800 mb-3">Document Information</h3>
+                    <div id="docDetails" class="space-y-2 text-xs sm:text-sm text-gray-600">
+                        <!-- Will be populated dynamically -->
+                    </div>
+                </div>
+
+                <!-- Quick Chat Card -->
+                <div id="quickChatCard" class="bg-white rounded-xl card-shadow p-4 sm:p-6 hidden animate-slide-up">
+                    <h3 class="text-base sm:text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                        <i class="fas fa-robot text-blue-600 mr-2"></i>
+                        <span>AI Assistant Ready</span>
+                    </h3>
+                    <p class="text-xs sm:text-sm text-gray-600 mb-3">Ask questions about your document events, timelines, and maritime operations.</p>
+                    <button id="openChatBtn" class="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm">
+                        <i class="fas fa-comments mr-2"></i>
+                        Start Chat
+                    </button>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="lg:col-span-2">
+                <!-- Results Container -->
+                <div id="resultsSection" class="hidden animate-fade-in">
+                    <div class="bg-white rounded-xl card-shadow mb-4 sm:mb-6 overflow-hidden">
+                        <!-- Tabs -->
+                        <div class="flex border-b overflow-x-auto scrollbar-hide">
+                            <button id="tabEvents" class="tab-active px-3 sm:px-6 py-2 sm:py-3 font-medium text-xs sm:text-sm rounded-tl-xl whitespace-nowrap">
+                                <i class="fas fa-list mr-1 sm:mr-2"></i>
+                                <span class="hidden xs:inline">Events Timeline</span>
+                                <span class="xs:hidden">Events</span>
+                            </button>
+                            <button id="tabSummary" class="px-3 sm:px-6 py-2 sm:py-3 font-medium text-xs sm:text-sm text-gray-600 hover:text-gray-800 whitespace-nowrap">
+                                <i class="fas fa-chart-bar mr-1 sm:mr-2"></i>
+                                <span class="hidden xs:inline">Summary</span>
+                                <span class="xs:hidden">Stats</span>
+                            </button>
+                            <button id="tabChat" class="px-3 sm:px-6 py-2 sm:py-3 font-medium text-xs sm:text-sm text-gray-600 hover:text-gray-800 whitespace-nowrap">
+                                <i class="fas fa-robot mr-1 sm:mr-2"></i>
+                                <span class="hidden xs:inline">AI Assistant</span>
+                                <span class="xs:hidden">AI</span>
+                            </button>
+                            <button id="tabExport" class="px-3 sm:px-6 py-2 sm:py-3 font-medium text-xs sm:text-sm text-gray-600 hover:text-gray-800 whitespace-nowrap">
+                                <i class="fas fa-download mr-1 sm:mr-2"></i>
+                                <span class="hidden xs:inline">Export</span>
+                                <span class="xs:hidden">Save</span>
+                            </button>
+                        </div>
+
+                        <!-- Tab Content -->
+                        <div id="tabContent" class="p-3 sm:p-6">
+                            <!-- Events Timeline Tab -->
+                            <div id="eventsTab">
+                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 space-y-3 sm:space-y-0">
+                                    <h3 class="text-base sm:text-lg font-semibold text-gray-800">Extracted Events</h3>
+                                    <div class="flex flex-col xs:flex-row items-start xs:items-center space-y-2 xs:space-y-0 xs:space-x-4">
+                                        <div class="text-xs sm:text-sm text-gray-600 order-2 xs:order-1">
+                                            Total: <span id="eventCount" class="font-semibold">0</span> events
+                                        </div>
+                                        <div class="flex items-center space-x-2 order-1 xs:order-2">
+                                            <label class="text-xs sm:text-sm text-gray-600">Filter:</label>
+                                            <select id="eventFilter" class="text-xs sm:text-sm border border-gray-300 rounded px-2 py-1">
+                                                <option value="all">All Events</option>
+                                                <option value="arrival">Arrival</option>
+                                                <option value="berthing">Berthing</option>
+                                                <option value="loading">Loading</option>
+                                                <option value="discharging">Discharging</option>
+                                                <option value="departure">Departure</option>
+                                                <option value="pilot">Pilot Operations</option>
+                                                <option value="weather">Weather Delays</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Events Table -->
+                                <div class="overflow-x-auto -mx-3 sm:mx-0">
+                                    <div class="min-w-full inline-block align-middle">
+                                        <div class="overflow-hidden border border-gray-200 sm:rounded-lg">
+                                            <table class="min-w-full divide-y divide-gray-200">
+                                                <thead class="bg-gray-50">
+                                                    <tr>
+                                                        <th class="px-2 sm:px-4 py-2 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Event</th>
+                                                        <th class="px-2 sm:px-4 py-2 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hidden sm:table-cell">Start Time</th>
+                                                        <th class="px-2 sm:px-4 py-2 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hidden md:table-cell">End Time</th>
+                                                        <th class="px-2 sm:px-4 py-2 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hidden lg:table-cell">Duration</th>
+                                                        <th class="px-2 sm:px-4 py-2 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hidden sm:table-cell">Location</th>
+                                                        <th class="px-2 sm:px-4 py-2 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Score</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="eventsTableBody" class="bg-white divide-y divide-gray-200">
+                                                    <!-- Events will be populated here -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Summary Tab -->
+                            <div id="summaryTab" class="hidden">
+                                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
+                                    <!-- Summary Cards -->
+                                    <div class="space-y-3 sm:space-y-4">
+                                        <div class="bg-blue-50 rounded-lg p-3 sm:p-4">
+                                            <div class="flex items-center">
+                                                <i class="fas fa-clock text-blue-600 text-xl sm:text-2xl mr-2 sm:mr-3"></i>
+                                                <div>
+                                                    <div class="text-lg sm:text-2xl font-bold text-blue-600" id="totalLaytime">--</div>
+                                                    <div class="text-xs sm:text-sm text-blue-600">Total Laytime</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bg-green-50 rounded-lg p-3 sm:p-4">
+                                            <div class="flex items-center">
+                                                <i class="fas fa-play text-green-600 text-xl sm:text-2xl mr-2 sm:mr-3"></i>
+                                                <div>
+                                                    <div class="text-lg sm:text-2xl font-bold text-green-600" id="operatingTime">--</div>
+                                                    <div class="text-xs sm:text-sm text-green-600">Operating Time</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bg-red-50 rounded-lg p-3 sm:p-4">
+                                            <div class="flex items-center">
+                                                <i class="fas fa-pause text-red-600 text-xl sm:text-2xl mr-2 sm:mr-3"></i>
+                                                <div>
+                                                    <div class="text-lg sm:text-2xl font-bold text-red-600" id="delayTime">--</div>
+                                                    <div class="text-xs sm:text-sm text-red-600">Weather Delays</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Event Distribution Chart -->
+                                    <div class="bg-gray-50 rounded-lg p-3 sm:p-4">
+                                        <h4 class="font-semibold text-gray-800 mb-3 sm:mb-4 text-sm sm:text-base">Event Distribution</h4>
+                                        <div id="eventDistribution" class="space-y-2 sm:space-y-3">
+                                            <!-- Chart will be populated here -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- AI Chat Tab -->
+                            <div id="chatTab" class="hidden">
+                                <div class="flex flex-col h-full">
+                                    <!-- Chat Header -->
+                                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 pb-4 border-b space-y-3 sm:space-y-0">
+                                        <div class="flex items-center space-x-3">
+                                            <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full ai-avatar flex items-center justify-center flex-shrink-0">
+                                                <i class="fas fa-robot text-white text-sm sm:text-lg"></i>
+                                            </div>
+                                            <div>
+                                                <h3 class="text-base sm:text-lg font-semibold text-gray-800">Maritime AI Assistant</h3>
+                                                <p class="text-xs sm:text-sm text-gray-600">Ask questions about your SoF document</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center space-x-2 self-start sm:self-center">
+                                            <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse-slow"></div>
+                                            <span class="text-xs sm:text-sm text-gray-600">Online</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Suggestion Chips -->
+                                    <div id="suggestionChips" class="mb-4">
+                                        <p class="text-xs sm:text-sm text-gray-600 mb-2">Try asking:</p>
+                                        <div class="flex flex-wrap gap-1 sm:gap-2">
+                                            <button class="suggestion-chip px-2 py-1 rounded-full border border-gray-200" data-question="What was the total loading time?">
+                                                Total loading time?
+                                            </button>
+                                            <button class="suggestion-chip px-2 py-1 rounded-full border border-gray-200" data-question="When did the vessel arrive?">
+                                                Vessel arrival?
+                                            </button>
+                                            <button class="suggestion-chip px-2 py-1 rounded-full border border-gray-200" data-question="Were there any weather delays?">
+                                                Weather delays?
+                                            </button>
+                                            <button class="suggestion-chip px-2 py-1 rounded-full border border-gray-200" data-question="Show me all pilot operations">
+                                                Pilot operations
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Chat Messages -->
+                                    <div id="chatMessages" class="chat-container flex-1 space-y-3 sm:space-y-4 mb-4 pr-2">
+                                        <!-- Welcome message -->
+                                        <div class="flex items-start space-x-2 sm:space-x-3 animate-slide-up">
+                                            <div class="w-6 h-6 sm:w-8 sm:h-8 rounded-full ai-avatar flex items-center justify-center flex-shrink-0">
+                                                <i class="fas fa-robot text-white text-xs sm:text-sm"></i>
+                                            </div>
+                                            <div class="bg-gray-100 rounded-lg p-2 sm:p-3 max-w-xs sm:max-w-md">
+                                                <p class="text-xs sm:text-sm text-gray-800">
+                                                    Hello! I'm your maritime AI assistant. Upload a SoF document and I'll help you analyze vessel operations, timelines, delays, and more.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Chat Input -->
+                                    <div class="border-t pt-4">
+                                        <div class="flex items-center space-x-2 sm:space-x-3">
+                                            <div class="flex-1 relative">
+                                                <input 
+                                                    type="text" 
+                                                    id="chatInput" 
+                                                    placeholder="Ask about events, timelines, delays..."
+                                                    class="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg chat-input focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                                                >
+                                            </div>
+                                            <button 
+                                                id="sendChatBtn" 
+                                                class="px-3 sm:px-4 py-2 sm:py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                            >
+                                                <i class="fas fa-paper-plane text-sm"></i>
+                                            </button>
+                                        </div>
+                                        <p class="text-xs text-gray-500 mt-2">
+                                            AI responses are based on extracted document data.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Export Tab -->
+                            <div id="exportTab" class="hidden">
+                                <div class="space-y-4 sm:space-y-6">
+                                    <div class="text-center">
+                                        <h3 class="text-base sm:text-lg font-semibold text-gray-800 mb-2">Export Extracted Data</h3>
+                                        <p class="text-sm text-gray-600">Download the extracted events in your preferred format</p>
+                                    </div>
+                                    
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                                        <!-- CSV Export -->
+                                        <div class="bg-green-50 rounded-lg p-4 sm:p-6 text-center">
+                                            <i class="fas fa-file-csv text-green-600 text-2xl sm:text-4xl mb-3 sm:mb-4"></i>
+                                            <h4 class="font-semibold text-gray-800 mb-2 text-sm sm:text-base">CSV Format</h4>
+                                            <p class="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">Perfect for Excel analysis and reporting</p>
+                                            <button id="downloadCSV" class="w-full bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm">
+                                                <i class="fas fa-download mr-2"></i>
+                                                Download CSV
+                                            </button>
+                                        </div>
+                                        
+                                        <!-- JSON Export -->
+                                        <div class="bg-blue-50 rounded-lg p-4 sm:p-6 text-center">
+                                            <i class="fas fa-file-code text-blue-600 text-2xl sm:text-4xl mb-3 sm:mb-4"></i>
+                                            <h4 class="font-semibold text-gray-800 mb-2 text-sm sm:text-base">JSON Format</h4>
+                                            <p class="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">Structured data for API integration</p>
+                                            <button id="downloadJSON" class="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm">
+                                                <i class="fas fa-download mr-2"></i>
+                                                Download JSON
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Export Options -->
+                                    <div class="bg-gray-50 rounded-lg p-3 sm:p-4">
+                                        <h4 class="font-medium text-gray-800 mb-3 text-sm sm:text-base">Export Options</h4>
+                                        <div class="space-y-2">
+                                            <label class="flex items-center text-sm">
+                                                <input type="checkbox" id="includeConfidence" checked class="mr-2">
+                                                <span class="text-gray-700">Include confidence scores</span>
+                                            </label>
+                                            <label class="flex items-center text-sm">
+                                                <input type="checkbox" id="includeRemarks" checked class="mr-2">
+                                                <span class="text-gray-700">Include remarks and notes</span>
+                                            </label>
+                                            <label class="flex items-center text-sm">
+                                                <input type="checkbox" id="includeMetadata" class="mr-2">
+                                                <span class="text-gray-700">Include document metadata</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Welcome Message -->
+                <div id="welcomeMessage" class="text-center py-6 sm:py-12 animate-fade-in">
+                    <div class="mb-6 sm:mb-8">
+                        <div class="w-32 h-32 sm:w-48 sm:h-48 mx-auto bg-gradient-to-br from-blue-100 to-purple-100 rounded-full flex items-center justify-center mb-4 sm:mb-6">
+                            <i class="fas fa-ship text-4xl sm:text-6xl text-blue-600"></i>
+                        </div>
+                    </div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-gray-800 mb-3 sm:mb-4">Welcome to SoF Event Extractor</h2>
+                    <p class="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 max-w-2xl mx-auto px-4">
+                        Our AI-powered system automatically extracts events, timestamps, and operational details from 
+                        Statement of Facts documents. Simply upload your PDF or Word document to get started.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto px-4">
+                        <div class="text-center p-3 sm:p-4">
+                            <div class="w-12 h-12 sm:w-16 sm:h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                                <i class="fas fa-upload text-blue-600 text-lg sm:text-2xl"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 mb-1 sm:mb-2 text-sm sm:text-base">1. Upload Document</h3>
+                            <p class="text-xs sm:text-sm text-gray-600">Support for PDF, DOC, and DOCX formats</p>
+                        </div>
+                        <div class="text-center p-3 sm:p-4">
+                            <div class="w-12 h-12 sm:w-16 sm:h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                                <i class="fas fa-cogs text-green-600 text-lg sm:text-2xl"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 mb-1 sm:mb-2 text-sm sm:text-base">2. AI Processing</h3>
+                            <p class="text-xs sm:text-sm text-gray-600">Advanced NLP extracts all events automatically</p>
+                        </div>
+                        <div class="text-center p-3 sm:p-4">
+                            <div class="w-12 h-12 sm:w-16 sm:h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                                <i class="fas fa-download text-purple-600 text-lg sm:text-2xl"></i>
+                            </div>
+                            <h3 class="font-semibold text-gray-800 mb-1 sm:mb-2 text-sm sm:text-base">3. Export Results</h3>
+                            <p class="text-xs sm:text-sm text-gray-600">Download structured data in CSV or JSON format</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-12 sm:mt-16 py-6 sm:py-8 border-t border-gray-200">
+        <div class="container mx-auto px-3 sm:px-4 text-center text-gray-600">
+            <p class="text-xs sm:text-sm">© 2024 SoF Event Extractor - Laytime Intelligence System. Powered by AI & Maritime Expertise.</p>
+        </div>
+    </footer>
+
+    <!-- Loading Indicator -->
+    <div id="globalLoader" class="fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center z-50 hidden">
+        <div class="text-center">
+            <div class="processing-spinner mb-4"></div>
+            <p class="text-gray-600 text-sm">Processing...</p>
+        </div>
+    </div>
+
+    <script src="static/js/app.js"></script>
+</body>
+</html>
